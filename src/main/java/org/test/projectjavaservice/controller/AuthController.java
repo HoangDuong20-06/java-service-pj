@@ -5,6 +5,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import org.test.projectjavaservice.modal.dto.req.ForgotPasswordRequest;
 import org.test.projectjavaservice.modal.dto.req.LoginRequest;
 import org.test.projectjavaservice.modal.dto.req.RegisterRequest;
 import org.test.projectjavaservice.modal.dto.req.TokenRefreshRequest;
@@ -42,7 +43,6 @@ public class AuthController {
                 .message("Login successfully")
                 .data(data)
                 .build();
-
         return ResponseEntity.ok(response);
     }
     @PostMapping("/refresh")
@@ -53,7 +53,6 @@ public class AuthController {
                 .message("Refresh token successfully")
                 .data(data)
                 .build();
-
         return ResponseEntity.ok(response);
     }
     @PostMapping("/logout")
@@ -61,7 +60,17 @@ public class AuthController {
         logoutService.logout(authHeader);
         ApiResponse<Void> response = ApiResponse.<Void>builder()
                 .success(true)
-                .message("Đăng xuất và hủy bỏ Token thành công")
+                .message("Logout and cancle token successfuly")
+                .build();
+        return ResponseEntity.ok(response);
+    }
+    @PostMapping("/forgot-password")
+    public ResponseEntity<ApiResponse<Void>> forgotPassword(@Valid @RequestBody ForgotPasswordRequest request) {
+        authService.resetPassword(request);
+
+        ApiResponse<Void> response = ApiResponse.<Void>builder()
+                .success(true)
+                .message("Mật khẩu mới tạm thời đã được thiết lập lại thành công.")
                 .build();
 
         return ResponseEntity.ok(response);

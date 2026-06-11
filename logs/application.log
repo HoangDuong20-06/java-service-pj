@@ -2509,3 +2509,1119 @@ java.sql.SQLIntegrityConstraintViolationException: Cannot add or update a child 
 2026-06-11T04:45:41.681+07:00  WARN 26232 --- [project-java-service] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 2026-06-11T04:45:41.998+07:00  INFO 26232 --- [project-java-service] [restartedMain] o.t.p.ProjectJavaServiceApplication      : Started ProjectJavaServiceApplication in 2.804 seconds (process running for 135.58)
 2026-06-11T04:46:00.016+07:00  INFO 26232 --- [project-java-service] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-11T04:47:49.628+07:00  WARN 26232 --- [project-java-service] [http-nio-8080-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingRequestHeaderException: Required request header 'Authorization' for method parameter type String is not present]
+2026-06-11T04:51:47.761+07:00  INFO 26232 --- [project-java-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2026-06-11T04:51:47.764+07:00  INFO 26232 --- [project-java-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+x`2026-06-11T13:05:29.294+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.t.p.ProjectJavaServiceApplication      : Starting ProjectJavaServiceApplication using Java 21.0.11 with PID 7572 (C:\Users\admin\IdeaProjects\JavaWebService\project-java-service\build\classes\java\main started by admin in C:\Users\admin\IdeaProjects\JavaWebService\project-java-service)
+2026-06-11T13:05:29.299+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.t.p.ProjectJavaServiceApplication      : No active profile set, falling back to 1 default profile: "default"
+2026-06-11T13:05:31.627+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-11T13:05:31.628+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-11T13:05:31.771+07:00  INFO 7572 --- [project-java-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-06-11T13:05:32.378+07:00  INFO 7572 --- [project-java-service] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@25055d5f
+2026-06-11T13:05:32.380+07:00  INFO 7572 --- [project-java-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-06-11T13:05:32.533+07:00  INFO 7572 --- [project-java-service] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-11T13:05:32.678+07:00  INFO 7572 --- [project-java-service] [restartedMain] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-06-11T13:05:33.770+07:00  WARN 7572 --- [project-java-service] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-06-11T13:05:33.796+07:00  INFO 7572 --- [project-java-service] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/java-service-pj?createDatabaseIfNotExist=true]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.45
+	Default catalog/schema: java-service-pj/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-11T13:05:35.560+07:00  INFO 7572 --- [project-java-service] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-11T13:05:36.472+07:00  WARN 7572 --- [project-java-service] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-11T13:05:37.220+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.t.p.ProjectJavaServiceApplication      : Started ProjectJavaServiceApplication in 8.534 seconds (process running for 11.134)
+2026-06-11T13:05:44.753+07:00  INFO 7572 --- [project-java-service] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-11T13:07:46.787+07:00  WARN 7572 --- [project-java-service] [http-nio-8080-exec-4] .w.s.m.a.ResponseStatusExceptionResolver : Resolved [org.springframework.web.server.ResponseStatusException: 409 CONFLICT "Time slot is occupied or in pending"]
+2026-06-11T13:09:26.605+07:00  WARN 7572 --- [project-java-service] [http-nio-8080-exec-3] .w.s.m.a.ResponseStatusExceptionResolver : Resolved [org.springframework.web.server.ResponseStatusException: 409 CONFLICT "Time slot is occupied or in pending"]
+2026-06-11T13:09:34.130+07:00  WARN 7572 --- [project-java-service] [http-nio-8080-exec-1] .w.s.m.a.ResponseStatusExceptionResolver : Resolved [org.springframework.web.server.ResponseStatusException: 409 CONFLICT "Time slot is occupied or in pending"]
+2026-06-11T13:17:24.396+07:00  WARN 7572 --- [project-java-service] [http-nio-8080-exec-9] .w.s.m.a.ResponseStatusExceptionResolver : Resolved [org.springframework.web.server.ResponseStatusException: 409 CONFLICT "Time slot is occupied or in pending"]
+2026-06-11T13:17:27.717+07:00  WARN 7572 --- [project-java-service] [http-nio-8080-exec-10] .w.s.m.a.ResponseStatusExceptionResolver : Resolved [org.springframework.web.server.ResponseStatusException: 409 CONFLICT "Time slot is occupied or in pending"]
+2026-06-11T13:19:58.702+07:00  WARN 7572 --- [project-java-service] [http-nio-8080-exec-2] .w.s.m.a.ResponseStatusExceptionResolver : Resolved [org.springframework.web.server.ResponseStatusException: 409 CONFLICT "Time slot is occupied or in pending"]
+2026-06-11T13:20:07.485+07:00  WARN 7572 --- [project-java-service] [http-nio-8080-exec-6] .w.s.m.a.ResponseStatusExceptionResolver : Resolved [org.springframework.web.server.ResponseStatusException: 409 CONFLICT "Time slot is occupied or in pending"]
+2026-06-11T13:20:08.499+07:00  WARN 7572 --- [project-java-service] [http-nio-8080-exec-5] .w.s.m.a.ResponseStatusExceptionResolver : Resolved [org.springframework.web.server.ResponseStatusException: 409 CONFLICT "Time slot is occupied or in pending"]
+2026-06-11T13:20:20.090+07:00  WARN 7572 --- [project-java-service] [http-nio-8080-exec-7] .w.s.m.a.ResponseStatusExceptionResolver : Resolved [org.springframework.web.server.ResponseStatusException: 409 CONFLICT "Time slot is occupied or in pending"]
+2026-06-11T13:20:21.272+07:00  WARN 7572 --- [project-java-service] [http-nio-8080-exec-4] .w.s.m.a.ResponseStatusExceptionResolver : Resolved [org.springframework.web.server.ResponseStatusException: 409 CONFLICT "Time slot is occupied or in pending"]
+2026-06-11T13:20:30.388+07:00  WARN 7572 --- [project-java-service] [http-nio-8080-exec-9] .w.s.m.a.ResponseStatusExceptionResolver : Resolved [org.springframework.web.server.ResponseStatusException: 409 CONFLICT "Time slot is occupied or in pending"]
+2026-06-11T13:32:22.310+07:00  WARN 7572 --- [project-java-service] [http-nio-8080-exec-3] .w.s.m.a.ResponseStatusExceptionResolver : Resolved [org.springframework.web.server.ResponseStatusException: 409 CONFLICT "Time slot is occupied or in pending"]
+2026-06-11T13:33:16.840+07:00  WARN 7572 --- [project-java-service] [http-nio-8080-exec-8] .w.s.m.a.ResponseStatusExceptionResolver : Resolved [org.springframework.web.server.ResponseStatusException: 409 CONFLICT "Time slot is occupied or in pending"]
+2026-06-11T13:35:51.287+07:00  WARN 7572 --- [project-java-service] [http-nio-8080-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public org.springframework.http.ResponseEntity<org.test.projectjavaservice.modal.dto.res.ApiResponse<org.test.projectjavaservice.modal.dto.res.JwtResponse>> org.test.projectjavaservice.controller.AuthController.refresh(org.test.projectjavaservice.modal.dto.req.TokenRefreshRequest)]
+2026-06-11T13:36:20.781+07:00  WARN 7572 --- [project-java-service] [http-nio-8080-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public org.springframework.http.ResponseEntity<org.test.projectjavaservice.modal.dto.res.ApiResponse<org.test.projectjavaservice.modal.dto.res.JwtResponse>> org.test.projectjavaservice.controller.AuthController.refresh(org.test.projectjavaservice.modal.dto.req.TokenRefreshRequest)]
+2026-06-11T13:37:14.501+07:00  WARN 7572 --- [project-java-service] [http-nio-8080-exec-10] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<org.test.projectjavaservice.modal.dto.res.ApiResponse<org.test.projectjavaservice.modal.dto.res.JwtResponse>> org.test.projectjavaservice.controller.AuthController.refresh(org.test.projectjavaservice.modal.dto.req.TokenRefreshRequest): [Field error in object 'tokenRefreshRequest' on field 'refreshToken': rejected value [null]; codes [NotBlank.tokenRefreshRequest.refreshToken,NotBlank.refreshToken,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [tokenRefreshRequest.refreshToken,refreshToken]; arguments []; default message [refreshToken]]; default message [Refresh Token can not be blank]] ]
+2026-06-11T13:40:45.454+07:00  INFO 7572 --- [project-java-service] [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-06-11T13:40:45.507+07:00  INFO 7572 --- [project-java-service] [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-06-11T13:40:46.324+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.t.p.ProjectJavaServiceApplication      : Starting ProjectJavaServiceApplication using Java 21.0.11 with PID 7572 (C:\Users\admin\IdeaProjects\JavaWebService\project-java-service\build\classes\java\main started by admin in C:\Users\admin\IdeaProjects\JavaWebService\project-java-service)
+2026-06-11T13:40:46.326+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.t.p.ProjectJavaServiceApplication      : No active profile set, falling back to 1 default profile: "default"
+2026-06-11T13:40:50.014+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-11T13:40:50.014+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-11T13:40:50.230+07:00  INFO 7572 --- [project-java-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2026-06-11T13:40:50.403+07:00  INFO 7572 --- [project-java-service] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1f43541b
+2026-06-11T13:40:50.403+07:00  INFO 7572 --- [project-java-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2026-06-11T13:40:50.532+07:00  INFO 7572 --- [project-java-service] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-11T13:40:50.789+07:00  WARN 7572 --- [project-java-service] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-06-11T13:40:50.791+07:00  INFO 7572 --- [project-java-service] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/java-service-pj?createDatabaseIfNotExist=true]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.45
+	Default catalog/schema: java-service-pj/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-11T13:40:51.615+07:00  INFO 7572 --- [project-java-service] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-11T13:40:52.750+07:00  WARN 7572 --- [project-java-service] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'authController' defined in file [C:\Users\admin\IdeaProjects\JavaWebService\project-java-service\build\classes\java\main\org\test\projectjavaservice\controller\AuthController.class]: Unsatisfied dependency expressed through constructor parameter 3: No qualifying bean of type 'org.test.projectjavaservice.service.LogoutService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2026-06-11T13:40:52.753+07:00  INFO 7572 --- [project-java-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2026-06-11T13:40:52.775+07:00  INFO 7572 --- [project-java-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2026-06-11T13:40:52.777+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2026-06-11T13:40:52.901+07:00 ERROR 7572 --- [project-java-service] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 3 of constructor in org.test.projectjavaservice.controller.AuthController required a bean of type 'org.test.projectjavaservice.service.LogoutService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.test.projectjavaservice.service.LogoutService' in your configuration.
+
+2026-06-11T13:40:54.700+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.t.p.ProjectJavaServiceApplication      : Starting ProjectJavaServiceApplication using Java 21.0.11 with PID 7572 (C:\Users\admin\IdeaProjects\JavaWebService\project-java-service\build\classes\java\main started by admin in C:\Users\admin\IdeaProjects\JavaWebService\project-java-service)
+2026-06-11T13:40:54.702+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.t.p.ProjectJavaServiceApplication      : No active profile set, falling back to 1 default profile: "default"
+2026-06-11T13:40:56.068+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-11T13:40:56.070+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-11T13:40:56.192+07:00  INFO 7572 --- [project-java-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2026-06-11T13:40:56.228+07:00  INFO 7572 --- [project-java-service] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@228c6d1e
+2026-06-11T13:40:56.228+07:00  INFO 7572 --- [project-java-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2026-06-11T13:40:56.277+07:00  INFO 7572 --- [project-java-service] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-11T13:40:56.429+07:00  WARN 7572 --- [project-java-service] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-06-11T13:40:56.432+07:00  INFO 7572 --- [project-java-service] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/java-service-pj?createDatabaseIfNotExist=true]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.45
+	Default catalog/schema: java-service-pj/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-11T13:40:56.772+07:00  INFO 7572 --- [project-java-service] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-11T13:40:57.158+07:00  WARN 7572 --- [project-java-service] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'authController' defined in file [C:\Users\admin\IdeaProjects\JavaWebService\project-java-service\build\classes\java\main\org\test\projectjavaservice\controller\AuthController.class]: Unsatisfied dependency expressed through constructor parameter 3: No qualifying bean of type 'org.test.projectjavaservice.service.LogoutService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2026-06-11T13:40:57.159+07:00  INFO 7572 --- [project-java-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2026-06-11T13:40:57.174+07:00  INFO 7572 --- [project-java-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2026-06-11T13:40:57.174+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2026-06-11T13:40:57.203+07:00 ERROR 7572 --- [project-java-service] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 3 of constructor in org.test.projectjavaservice.controller.AuthController required a bean of type 'org.test.projectjavaservice.service.LogoutService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.test.projectjavaservice.service.LogoutService' in your configuration.
+
+2026-06-11T13:40:58.829+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.t.p.ProjectJavaServiceApplication      : Starting ProjectJavaServiceApplication using Java 21.0.11 with PID 7572 (C:\Users\admin\IdeaProjects\JavaWebService\project-java-service\build\classes\java\main started by admin in C:\Users\admin\IdeaProjects\JavaWebService\project-java-service)
+2026-06-11T13:40:58.830+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.t.p.ProjectJavaServiceApplication      : No active profile set, falling back to 1 default profile: "default"
+2026-06-11T13:40:59.937+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-11T13:40:59.937+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-11T13:41:00.058+07:00  INFO 7572 --- [project-java-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2026-06-11T13:41:00.084+07:00  INFO 7572 --- [project-java-service] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Added connection com.mysql.cj.jdbc.ConnectionImpl@68290fe9
+2026-06-11T13:41:00.085+07:00  INFO 7572 --- [project-java-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2026-06-11T13:41:00.124+07:00  INFO 7572 --- [project-java-service] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-11T13:41:00.241+07:00  WARN 7572 --- [project-java-service] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-06-11T13:41:00.243+07:00  INFO 7572 --- [project-java-service] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/java-service-pj?createDatabaseIfNotExist=true]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.45
+	Default catalog/schema: java-service-pj/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-11T13:41:00.591+07:00  INFO 7572 --- [project-java-service] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-11T13:41:00.995+07:00  WARN 7572 --- [project-java-service] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-11T13:41:01.524+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.t.p.ProjectJavaServiceApplication      : Started ProjectJavaServiceApplication in 2.774 seconds (process running for 2135.439)
+2026-06-11T13:41:35.919+07:00  INFO 7572 --- [project-java-service] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2026-06-11T13:41:35.924+07:00  INFO 7572 --- [project-java-service] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+2026-06-11T13:41:36.054+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.t.p.ProjectJavaServiceApplication      : Starting ProjectJavaServiceApplication using Java 21.0.11 with PID 7572 (C:\Users\admin\IdeaProjects\JavaWebService\project-java-service\build\classes\java\main started by admin in C:\Users\admin\IdeaProjects\JavaWebService\project-java-service)
+2026-06-11T13:41:36.055+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.t.p.ProjectJavaServiceApplication      : No active profile set, falling back to 1 default profile: "default"
+2026-06-11T13:41:37.001+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-11T13:41:37.002+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-11T13:41:37.176+07:00  INFO 7572 --- [project-java-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...
+2026-06-11T13:41:37.218+07:00  INFO 7572 --- [project-java-service] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-5 - Added connection com.mysql.cj.jdbc.ConnectionImpl@db5f0f3
+2026-06-11T13:41:37.219+07:00  INFO 7572 --- [project-java-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.
+2026-06-11T13:41:37.278+07:00  INFO 7572 --- [project-java-service] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-11T13:41:37.626+07:00  WARN 7572 --- [project-java-service] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-06-11T13:41:37.630+07:00  INFO 7572 --- [project-java-service] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/java-service-pj?createDatabaseIfNotExist=true]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.45
+	Default catalog/schema: java-service-pj/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-11T13:41:38.193+07:00  INFO 7572 --- [project-java-service] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-11T13:41:38.724+07:00  WARN 7572 --- [project-java-service] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'authController' defined in file [C:\Users\admin\IdeaProjects\JavaWebService\project-java-service\build\classes\java\main\org\test\projectjavaservice\controller\AuthController.class]: Unsatisfied dependency expressed through constructor parameter 3: No qualifying bean of type 'org.test.projectjavaservice.service.LogoutService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2026-06-11T13:41:38.725+07:00  INFO 7572 --- [project-java-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown initiated...
+2026-06-11T13:41:38.734+07:00  INFO 7572 --- [project-java-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown completed.
+2026-06-11T13:41:38.736+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2026-06-11T13:41:38.757+07:00 ERROR 7572 --- [project-java-service] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 3 of constructor in org.test.projectjavaservice.controller.AuthController required a bean of type 'org.test.projectjavaservice.service.LogoutService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.test.projectjavaservice.service.LogoutService' in your configuration.
+
+2026-06-11T13:42:15.340+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.t.p.ProjectJavaServiceApplication      : Starting ProjectJavaServiceApplication using Java 21.0.11 with PID 7572 (C:\Users\admin\IdeaProjects\JavaWebService\project-java-service\build\classes\java\main started by admin in C:\Users\admin\IdeaProjects\JavaWebService\project-java-service)
+2026-06-11T13:42:15.343+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.t.p.ProjectJavaServiceApplication      : No active profile set, falling back to 1 default profile: "default"
+2026-06-11T13:42:16.610+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-11T13:42:16.611+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-11T13:42:16.759+07:00  INFO 7572 --- [project-java-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Starting...
+2026-06-11T13:42:16.803+07:00  INFO 7572 --- [project-java-service] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-6 - Added connection com.mysql.cj.jdbc.ConnectionImpl@9bd1f1b
+2026-06-11T13:42:16.804+07:00  INFO 7572 --- [project-java-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Start completed.
+2026-06-11T13:42:16.845+07:00  INFO 7572 --- [project-java-service] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-11T13:42:16.971+07:00  WARN 7572 --- [project-java-service] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-06-11T13:42:16.973+07:00  INFO 7572 --- [project-java-service] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/java-service-pj?createDatabaseIfNotExist=true]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.45
+	Default catalog/schema: java-service-pj/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-11T13:42:17.301+07:00  INFO 7572 --- [project-java-service] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-11T13:42:17.736+07:00  WARN 7572 --- [project-java-service] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'authController' defined in file [C:\Users\admin\IdeaProjects\JavaWebService\project-java-service\build\classes\java\main\org\test\projectjavaservice\controller\AuthController.class]: Unsatisfied dependency expressed through constructor parameter 3: No qualifying bean of type 'org.test.projectjavaservice.service.LogoutService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2026-06-11T13:42:17.737+07:00  INFO 7572 --- [project-java-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown initiated...
+2026-06-11T13:42:17.747+07:00  INFO 7572 --- [project-java-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown completed.
+2026-06-11T13:42:17.748+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2026-06-11T13:42:17.781+07:00 ERROR 7572 --- [project-java-service] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 3 of constructor in org.test.projectjavaservice.controller.AuthController required a bean of type 'org.test.projectjavaservice.service.LogoutService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.test.projectjavaservice.service.LogoutService' in your configuration.
+
+2026-06-11T13:42:19.378+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.t.p.ProjectJavaServiceApplication      : Starting ProjectJavaServiceApplication using Java 21.0.11 with PID 7572 (C:\Users\admin\IdeaProjects\JavaWebService\project-java-service\build\classes\java\main started by admin in C:\Users\admin\IdeaProjects\JavaWebService\project-java-service)
+2026-06-11T13:42:19.379+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.t.p.ProjectJavaServiceApplication      : No active profile set, falling back to 1 default profile: "default"
+2026-06-11T13:42:20.456+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-11T13:42:20.457+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-11T13:42:20.614+07:00  INFO 7572 --- [project-java-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Starting...
+2026-06-11T13:42:20.651+07:00  INFO 7572 --- [project-java-service] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-7 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4cf3f145
+2026-06-11T13:42:20.652+07:00  INFO 7572 --- [project-java-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Start completed.
+2026-06-11T13:42:20.691+07:00  INFO 7572 --- [project-java-service] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-11T13:42:20.829+07:00  WARN 7572 --- [project-java-service] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-06-11T13:42:20.831+07:00  INFO 7572 --- [project-java-service] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/java-service-pj?createDatabaseIfNotExist=true]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.45
+	Default catalog/schema: java-service-pj/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-11T13:42:21.126+07:00  INFO 7572 --- [project-java-service] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-11T13:42:21.510+07:00  WARN 7572 --- [project-java-service] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-11T13:42:21.909+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.t.p.ProjectJavaServiceApplication      : Started ProjectJavaServiceApplication in 2.592 seconds (process running for 2215.823)
+2026-06-11T13:44:00.215+07:00  INFO 7572 --- [project-java-service] [Thread-15] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown initiated...
+2026-06-11T13:44:00.222+07:00  INFO 7572 --- [project-java-service] [Thread-15] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown completed.
+2026-06-11T13:44:00.424+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.t.p.ProjectJavaServiceApplication      : Starting ProjectJavaServiceApplication using Java 21.0.11 with PID 7572 (C:\Users\admin\IdeaProjects\JavaWebService\project-java-service\build\classes\java\main started by admin in C:\Users\admin\IdeaProjects\JavaWebService\project-java-service)
+2026-06-11T13:44:00.424+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.t.p.ProjectJavaServiceApplication      : No active profile set, falling back to 1 default profile: "default"
+2026-06-11T13:44:01.268+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-11T13:44:01.268+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-11T13:44:01.384+07:00  INFO 7572 --- [project-java-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Starting...
+2026-06-11T13:44:01.417+07:00  INFO 7572 --- [project-java-service] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-8 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5e31f44d
+2026-06-11T13:44:01.418+07:00  INFO 7572 --- [project-java-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Start completed.
+2026-06-11T13:44:01.463+07:00  INFO 7572 --- [project-java-service] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-11T13:44:01.549+07:00  WARN 7572 --- [project-java-service] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-06-11T13:44:01.551+07:00  INFO 7572 --- [project-java-service] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/java-service-pj?createDatabaseIfNotExist=true]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.45
+	Default catalog/schema: java-service-pj/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-11T13:44:01.874+07:00  INFO 7572 --- [project-java-service] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-11T13:44:02.718+07:00  WARN 7572 --- [project-java-service] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-11T13:44:03.296+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.t.p.ProjectJavaServiceApplication      : Started ProjectJavaServiceApplication in 2.933 seconds (process running for 2317.211)
+2026-06-11T13:46:30.938+07:00  INFO 7572 --- [project-java-service] [Thread-25] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Shutdown initiated...
+2026-06-11T13:46:30.946+07:00  INFO 7572 --- [project-java-service] [Thread-25] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Shutdown completed.
+2026-06-11T13:46:31.118+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.t.p.ProjectJavaServiceApplication      : Starting ProjectJavaServiceApplication using Java 21.0.11 with PID 7572 (C:\Users\admin\IdeaProjects\JavaWebService\project-java-service\build\classes\java\main started by admin in C:\Users\admin\IdeaProjects\JavaWebService\project-java-service)
+2026-06-11T13:46:31.120+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.t.p.ProjectJavaServiceApplication      : No active profile set, falling back to 1 default profile: "default"
+2026-06-11T13:46:31.938+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-11T13:46:31.938+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-11T13:46:32.028+07:00  INFO 7572 --- [project-java-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Starting...
+2026-06-11T13:46:32.062+07:00  INFO 7572 --- [project-java-service] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-9 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7b8f0bde
+2026-06-11T13:46:32.062+07:00  INFO 7572 --- [project-java-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Start completed.
+2026-06-11T13:46:32.098+07:00  INFO 7572 --- [project-java-service] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-11T13:46:32.177+07:00  WARN 7572 --- [project-java-service] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-06-11T13:46:32.178+07:00  INFO 7572 --- [project-java-service] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/java-service-pj?createDatabaseIfNotExist=true]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.45
+	Default catalog/schema: java-service-pj/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-11T13:46:32.361+07:00  INFO 7572 --- [project-java-service] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-11T13:46:32.832+07:00  WARN 7572 --- [project-java-service] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'authController' defined in file [C:\Users\admin\IdeaProjects\JavaWebService\project-java-service\build\classes\java\main\org\test\projectjavaservice\controller\AuthController.class]: Unsatisfied dependency expressed through constructor parameter 3: No qualifying bean of type 'org.test.projectjavaservice.service.LogoutService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2026-06-11T13:46:32.835+07:00  INFO 7572 --- [project-java-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Shutdown initiated...
+2026-06-11T13:46:32.855+07:00  INFO 7572 --- [project-java-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Shutdown completed.
+2026-06-11T13:46:32.856+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2026-06-11T13:46:32.876+07:00 ERROR 7572 --- [project-java-service] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 3 of constructor in org.test.projectjavaservice.controller.AuthController required a bean of type 'org.test.projectjavaservice.service.LogoutService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.test.projectjavaservice.service.LogoutService' in your configuration.
+
+2026-06-11T13:46:51.931+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.t.p.ProjectJavaServiceApplication      : Starting ProjectJavaServiceApplication using Java 21.0.11 with PID 7572 (C:\Users\admin\IdeaProjects\JavaWebService\project-java-service\build\classes\java\main started by admin in C:\Users\admin\IdeaProjects\JavaWebService\project-java-service)
+2026-06-11T13:46:51.932+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.t.p.ProjectJavaServiceApplication      : No active profile set, falling back to 1 default profile: "default"
+2026-06-11T13:46:53.761+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-11T13:46:53.762+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-11T13:46:54.035+07:00  INFO 7572 --- [project-java-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Starting...
+2026-06-11T13:46:54.079+07:00  INFO 7572 --- [project-java-service] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-10 - Added connection com.mysql.cj.jdbc.ConnectionImpl@74fa4664
+2026-06-11T13:46:54.081+07:00  INFO 7572 --- [project-java-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Start completed.
+2026-06-11T13:46:54.171+07:00  INFO 7572 --- [project-java-service] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-11T13:46:54.712+07:00  WARN 7572 --- [project-java-service] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-06-11T13:46:54.716+07:00  INFO 7572 --- [project-java-service] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/java-service-pj?createDatabaseIfNotExist=true]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.45
+	Default catalog/schema: java-service-pj/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-11T13:46:55.290+07:00  INFO 7572 --- [project-java-service] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-11T13:46:55.907+07:00  WARN 7572 --- [project-java-service] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'authController' defined in file [C:\Users\admin\IdeaProjects\JavaWebService\project-java-service\build\classes\java\main\org\test\projectjavaservice\controller\AuthController.class]: Unsatisfied dependency expressed through constructor parameter 3: No qualifying bean of type 'org.test.projectjavaservice.service.LogoutService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2026-06-11T13:46:55.908+07:00  INFO 7572 --- [project-java-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Shutdown initiated...
+2026-06-11T13:46:55.918+07:00  INFO 7572 --- [project-java-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Shutdown completed.
+2026-06-11T13:46:55.919+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2026-06-11T13:46:55.951+07:00 ERROR 7572 --- [project-java-service] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 3 of constructor in org.test.projectjavaservice.controller.AuthController required a bean of type 'org.test.projectjavaservice.service.LogoutService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.test.projectjavaservice.service.LogoutService' in your configuration.
+
+2026-06-11T13:47:10.119+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.t.p.ProjectJavaServiceApplication      : Starting ProjectJavaServiceApplication using Java 21.0.11 with PID 7572 (C:\Users\admin\IdeaProjects\JavaWebService\project-java-service\build\classes\java\main started by admin in C:\Users\admin\IdeaProjects\JavaWebService\project-java-service)
+2026-06-11T13:47:10.121+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.t.p.ProjectJavaServiceApplication      : No active profile set, falling back to 1 default profile: "default"
+2026-06-11T13:47:11.085+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-11T13:47:11.085+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-11T13:47:11.194+07:00  INFO 7572 --- [project-java-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Starting...
+2026-06-11T13:47:11.219+07:00  INFO 7572 --- [project-java-service] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-11 - Added connection com.mysql.cj.jdbc.ConnectionImpl@574ddafb
+2026-06-11T13:47:11.220+07:00  INFO 7572 --- [project-java-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Start completed.
+2026-06-11T13:47:11.285+07:00  INFO 7572 --- [project-java-service] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-11T13:47:11.414+07:00  WARN 7572 --- [project-java-service] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-06-11T13:47:11.416+07:00  INFO 7572 --- [project-java-service] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/java-service-pj?createDatabaseIfNotExist=true]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.45
+	Default catalog/schema: java-service-pj/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-11T13:47:11.718+07:00  INFO 7572 --- [project-java-service] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-11T13:47:12.097+07:00  WARN 7572 --- [project-java-service] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'authController' defined in file [C:\Users\admin\IdeaProjects\JavaWebService\project-java-service\build\classes\java\main\org\test\projectjavaservice\controller\AuthController.class]: Unsatisfied dependency expressed through constructor parameter 3: No qualifying bean of type 'org.test.projectjavaservice.service.LogoutService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2026-06-11T13:47:12.098+07:00  INFO 7572 --- [project-java-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Shutdown initiated...
+2026-06-11T13:47:12.104+07:00  INFO 7572 --- [project-java-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Shutdown completed.
+2026-06-11T13:47:12.105+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2026-06-11T13:47:12.123+07:00 ERROR 7572 --- [project-java-service] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 3 of constructor in org.test.projectjavaservice.controller.AuthController required a bean of type 'org.test.projectjavaservice.service.LogoutService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.test.projectjavaservice.service.LogoutService' in your configuration.
+
+2026-06-11T13:47:33.706+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.t.p.ProjectJavaServiceApplication      : Starting ProjectJavaServiceApplication using Java 21.0.11 with PID 7572 (C:\Users\admin\IdeaProjects\JavaWebService\project-java-service\build\classes\java\main started by admin in C:\Users\admin\IdeaProjects\JavaWebService\project-java-service)
+2026-06-11T13:47:33.706+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.t.p.ProjectJavaServiceApplication      : No active profile set, falling back to 1 default profile: "default"
+2026-06-11T13:47:34.557+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-11T13:47:34.559+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-11T13:47:34.657+07:00  INFO 7572 --- [project-java-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Starting...
+2026-06-11T13:47:34.683+07:00  INFO 7572 --- [project-java-service] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-12 - Added connection com.mysql.cj.jdbc.ConnectionImpl@37a43047
+2026-06-11T13:47:34.683+07:00  INFO 7572 --- [project-java-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Start completed.
+2026-06-11T13:47:34.712+07:00  INFO 7572 --- [project-java-service] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-11T13:47:34.776+07:00  WARN 7572 --- [project-java-service] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-06-11T13:47:34.777+07:00  INFO 7572 --- [project-java-service] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/java-service-pj?createDatabaseIfNotExist=true]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.45
+	Default catalog/schema: java-service-pj/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-11T13:47:34.901+07:00  INFO 7572 --- [project-java-service] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-11T13:47:35.078+07:00  WARN 7572 --- [project-java-service] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'authController' defined in file [C:\Users\admin\IdeaProjects\JavaWebService\project-java-service\build\classes\java\main\org\test\projectjavaservice\controller\AuthController.class]: Unsatisfied dependency expressed through constructor parameter 3: No qualifying bean of type 'org.test.projectjavaservice.service.LogoutService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2026-06-11T13:47:35.078+07:00  INFO 7572 --- [project-java-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Shutdown initiated...
+2026-06-11T13:47:35.109+07:00  INFO 7572 --- [project-java-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Shutdown completed.
+2026-06-11T13:47:35.110+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2026-06-11T13:47:35.123+07:00 ERROR 7572 --- [project-java-service] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 3 of constructor in org.test.projectjavaservice.controller.AuthController required a bean of type 'org.test.projectjavaservice.service.LogoutService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.test.projectjavaservice.service.LogoutService' in your configuration.
+
+2026-06-11T13:47:36.653+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.t.p.ProjectJavaServiceApplication      : Starting ProjectJavaServiceApplication using Java 21.0.11 with PID 7572 (C:\Users\admin\IdeaProjects\JavaWebService\project-java-service\build\classes\java\main started by admin in C:\Users\admin\IdeaProjects\JavaWebService\project-java-service)
+2026-06-11T13:47:36.653+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.t.p.ProjectJavaServiceApplication      : No active profile set, falling back to 1 default profile: "default"
+2026-06-11T13:47:37.028+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-11T13:47:37.028+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-11T13:47:37.078+07:00  INFO 7572 --- [project-java-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Starting...
+2026-06-11T13:47:37.120+07:00  INFO 7572 --- [project-java-service] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-13 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3441cbff
+2026-06-11T13:47:37.121+07:00  INFO 7572 --- [project-java-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Start completed.
+2026-06-11T13:47:37.153+07:00  INFO 7572 --- [project-java-service] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-11T13:47:37.254+07:00  WARN 7572 --- [project-java-service] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-06-11T13:47:37.255+07:00  INFO 7572 --- [project-java-service] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/java-service-pj?createDatabaseIfNotExist=true]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.45
+	Default catalog/schema: java-service-pj/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-11T13:47:37.552+07:00  INFO 7572 --- [project-java-service] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-11T13:47:37.892+07:00  WARN 7572 --- [project-java-service] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-11T13:47:38.288+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.t.p.ProjectJavaServiceApplication      : Started ProjectJavaServiceApplication in 1.657 seconds (process running for 2532.202)
+2026-06-11T13:47:44.983+07:00  INFO 7572 --- [project-java-service] [Thread-29] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Shutdown initiated...
+2026-06-11T13:47:44.987+07:00  INFO 7572 --- [project-java-service] [Thread-29] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Shutdown completed.
+2026-06-11T13:47:45.234+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.t.p.ProjectJavaServiceApplication      : Starting ProjectJavaServiceApplication using Java 21.0.11 with PID 7572 (C:\Users\admin\IdeaProjects\JavaWebService\project-java-service\build\classes\java\main started by admin in C:\Users\admin\IdeaProjects\JavaWebService\project-java-service)
+2026-06-11T13:47:45.235+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.t.p.ProjectJavaServiceApplication      : No active profile set, falling back to 1 default profile: "default"
+2026-06-11T13:47:46.248+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-11T13:47:46.248+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-11T13:47:46.365+07:00  INFO 7572 --- [project-java-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-14 - Starting...
+2026-06-11T13:47:46.399+07:00  INFO 7572 --- [project-java-service] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-14 - Added connection com.mysql.cj.jdbc.ConnectionImpl@69743c81
+2026-06-11T13:47:46.399+07:00  INFO 7572 --- [project-java-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-14 - Start completed.
+2026-06-11T13:47:46.447+07:00  INFO 7572 --- [project-java-service] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-11T13:47:46.573+07:00  WARN 7572 --- [project-java-service] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-06-11T13:47:46.574+07:00  INFO 7572 --- [project-java-service] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/java-service-pj?createDatabaseIfNotExist=true]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.45
+	Default catalog/schema: java-service-pj/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-11T13:47:46.928+07:00  INFO 7572 --- [project-java-service] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-11T13:47:47.359+07:00  WARN 7572 --- [project-java-service] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'authController' defined in file [C:\Users\admin\IdeaProjects\JavaWebService\project-java-service\build\classes\java\main\org\test\projectjavaservice\controller\AuthController.class]: Unsatisfied dependency expressed through constructor parameter 3: No qualifying bean of type 'org.test.projectjavaservice.service.LogoutService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2026-06-11T13:47:47.365+07:00  INFO 7572 --- [project-java-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-14 - Shutdown initiated...
+2026-06-11T13:47:47.377+07:00  INFO 7572 --- [project-java-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-14 - Shutdown completed.
+2026-06-11T13:47:47.377+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2026-06-11T13:47:47.396+07:00 ERROR 7572 --- [project-java-service] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 3 of constructor in org.test.projectjavaservice.controller.AuthController required a bean of type 'org.test.projectjavaservice.service.LogoutService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.test.projectjavaservice.service.LogoutService' in your configuration.
+
+2026-06-11T13:47:48.942+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.t.p.ProjectJavaServiceApplication      : Starting ProjectJavaServiceApplication using Java 21.0.11 with PID 7572 (C:\Users\admin\IdeaProjects\JavaWebService\project-java-service\build\classes\java\main started by admin in C:\Users\admin\IdeaProjects\JavaWebService\project-java-service)
+2026-06-11T13:47:48.943+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.t.p.ProjectJavaServiceApplication      : No active profile set, falling back to 1 default profile: "default"
+2026-06-11T13:47:49.503+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-11T13:47:49.503+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-11T13:47:49.567+07:00  INFO 7572 --- [project-java-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-15 - Starting...
+2026-06-11T13:47:49.606+07:00  INFO 7572 --- [project-java-service] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-15 - Added connection com.mysql.cj.jdbc.ConnectionImpl@70a02e5c
+2026-06-11T13:47:49.607+07:00  INFO 7572 --- [project-java-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-15 - Start completed.
+2026-06-11T13:47:49.633+07:00  INFO 7572 --- [project-java-service] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-11T13:47:49.718+07:00  WARN 7572 --- [project-java-service] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-06-11T13:47:49.719+07:00  INFO 7572 --- [project-java-service] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/java-service-pj?createDatabaseIfNotExist=true]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.45
+	Default catalog/schema: java-service-pj/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-11T13:47:49.888+07:00  INFO 7572 --- [project-java-service] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-11T13:47:50.168+07:00  WARN 7572 --- [project-java-service] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-11T13:47:50.559+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.t.p.ProjectJavaServiceApplication      : Started ProjectJavaServiceApplication in 1.654 seconds (process running for 2544.473)
+2026-06-11T13:48:16.798+07:00  INFO 7572 --- [project-java-service] [Thread-45] com.zaxxer.hikari.HikariDataSource       : HikariPool-15 - Shutdown initiated...
+2026-06-11T13:48:16.804+07:00  INFO 7572 --- [project-java-service] [Thread-45] com.zaxxer.hikari.HikariDataSource       : HikariPool-15 - Shutdown completed.
+2026-06-11T13:48:16.968+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.t.p.ProjectJavaServiceApplication      : Starting ProjectJavaServiceApplication using Java 21.0.11 with PID 7572 (C:\Users\admin\IdeaProjects\JavaWebService\project-java-service\build\classes\java\main started by admin in C:\Users\admin\IdeaProjects\JavaWebService\project-java-service)
+2026-06-11T13:48:16.968+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.t.p.ProjectJavaServiceApplication      : No active profile set, falling back to 1 default profile: "default"
+2026-06-11T13:48:17.927+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-11T13:48:17.929+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-11T13:48:18.060+07:00  INFO 7572 --- [project-java-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-16 - Starting...
+2026-06-11T13:48:18.112+07:00  INFO 7572 --- [project-java-service] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-16 - Added connection com.mysql.cj.jdbc.ConnectionImpl@17de0b98
+2026-06-11T13:48:18.112+07:00  INFO 7572 --- [project-java-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-16 - Start completed.
+2026-06-11T13:48:18.162+07:00  INFO 7572 --- [project-java-service] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-11T13:48:18.330+07:00  WARN 7572 --- [project-java-service] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-06-11T13:48:18.332+07:00  INFO 7572 --- [project-java-service] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/java-service-pj?createDatabaseIfNotExist=true]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.45
+	Default catalog/schema: java-service-pj/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-11T13:48:18.850+07:00  INFO 7572 --- [project-java-service] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-11T13:48:19.441+07:00  WARN 7572 --- [project-java-service] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'authController' defined in file [C:\Users\admin\IdeaProjects\JavaWebService\project-java-service\build\classes\java\main\org\test\projectjavaservice\controller\AuthController.class]: Unsatisfied dependency expressed through constructor parameter 3: No qualifying bean of type 'org.test.projectjavaservice.service.LogoutService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2026-06-11T13:48:19.442+07:00  INFO 7572 --- [project-java-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-16 - Shutdown initiated...
+2026-06-11T13:48:19.452+07:00  INFO 7572 --- [project-java-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-16 - Shutdown completed.
+2026-06-11T13:48:19.455+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2026-06-11T13:48:19.483+07:00 ERROR 7572 --- [project-java-service] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 3 of constructor in org.test.projectjavaservice.controller.AuthController required a bean of type 'org.test.projectjavaservice.service.LogoutService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.test.projectjavaservice.service.LogoutService' in your configuration.
+
+2026-06-11T13:49:04.092+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.t.p.ProjectJavaServiceApplication      : Starting ProjectJavaServiceApplication using Java 21.0.11 with PID 7572 (C:\Users\admin\IdeaProjects\JavaWebService\project-java-service\build\classes\java\main started by admin in C:\Users\admin\IdeaProjects\JavaWebService\project-java-service)
+2026-06-11T13:49:04.093+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.t.p.ProjectJavaServiceApplication      : No active profile set, falling back to 1 default profile: "default"
+2026-06-11T13:49:05.509+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-11T13:49:05.510+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-11T13:49:05.720+07:00  INFO 7572 --- [project-java-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-17 - Starting...
+2026-06-11T13:49:05.762+07:00  INFO 7572 --- [project-java-service] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-17 - Added connection com.mysql.cj.jdbc.ConnectionImpl@54981bf2
+2026-06-11T13:49:05.764+07:00  INFO 7572 --- [project-java-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-17 - Start completed.
+2026-06-11T13:49:05.857+07:00  INFO 7572 --- [project-java-service] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-11T13:49:06.126+07:00  WARN 7572 --- [project-java-service] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-06-11T13:49:06.128+07:00  INFO 7572 --- [project-java-service] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/java-service-pj?createDatabaseIfNotExist=true]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.45
+	Default catalog/schema: java-service-pj/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-11T13:49:06.546+07:00  INFO 7572 --- [project-java-service] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-11T13:49:06.981+07:00  WARN 7572 --- [project-java-service] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'authController' defined in file [C:\Users\admin\IdeaProjects\JavaWebService\project-java-service\build\classes\java\main\org\test\projectjavaservice\controller\AuthController.class]: Unsatisfied dependency expressed through constructor parameter 3: No qualifying bean of type 'org.test.projectjavaservice.service.LogoutService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2026-06-11T13:49:06.982+07:00  INFO 7572 --- [project-java-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-17 - Shutdown initiated...
+2026-06-11T13:49:06.988+07:00  INFO 7572 --- [project-java-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-17 - Shutdown completed.
+2026-06-11T13:49:06.989+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2026-06-11T13:49:07.025+07:00 ERROR 7572 --- [project-java-service] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 3 of constructor in org.test.projectjavaservice.controller.AuthController required a bean of type 'org.test.projectjavaservice.service.LogoutService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.test.projectjavaservice.service.LogoutService' in your configuration.
+
+2026-06-11T13:49:08.639+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.t.p.ProjectJavaServiceApplication      : Starting ProjectJavaServiceApplication using Java 21.0.11 with PID 7572 (C:\Users\admin\IdeaProjects\JavaWebService\project-java-service\build\classes\java\main started by admin in C:\Users\admin\IdeaProjects\JavaWebService\project-java-service)
+2026-06-11T13:49:08.641+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.t.p.ProjectJavaServiceApplication      : No active profile set, falling back to 1 default profile: "default"
+2026-06-11T13:49:09.628+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-11T13:49:09.628+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-11T13:49:09.741+07:00  INFO 7572 --- [project-java-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-18 - Starting...
+2026-06-11T13:49:09.779+07:00  INFO 7572 --- [project-java-service] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-18 - Added connection com.mysql.cj.jdbc.ConnectionImpl@74e957b2
+2026-06-11T13:49:09.779+07:00  INFO 7572 --- [project-java-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-18 - Start completed.
+2026-06-11T13:49:09.828+07:00  INFO 7572 --- [project-java-service] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-11T13:49:09.941+07:00  WARN 7572 --- [project-java-service] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-06-11T13:49:09.944+07:00  INFO 7572 --- [project-java-service] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/java-service-pj?createDatabaseIfNotExist=true]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.45
+	Default catalog/schema: java-service-pj/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-11T13:49:10.214+07:00  INFO 7572 --- [project-java-service] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-11T13:49:10.604+07:00  WARN 7572 --- [project-java-service] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-11T13:49:11.245+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.t.p.ProjectJavaServiceApplication      : Started ProjectJavaServiceApplication in 2.693 seconds (process running for 2625.16)
+2026-06-11T13:49:19.957+07:00  INFO 7572 --- [project-java-service] [Thread-52] com.zaxxer.hikari.HikariDataSource       : HikariPool-18 - Shutdown initiated...
+2026-06-11T13:49:19.968+07:00  INFO 7572 --- [project-java-service] [Thread-52] com.zaxxer.hikari.HikariDataSource       : HikariPool-18 - Shutdown completed.
+2026-06-11T13:49:20.178+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.t.p.ProjectJavaServiceApplication      : Starting ProjectJavaServiceApplication using Java 21.0.11 with PID 7572 (C:\Users\admin\IdeaProjects\JavaWebService\project-java-service\build\classes\java\main started by admin in C:\Users\admin\IdeaProjects\JavaWebService\project-java-service)
+2026-06-11T13:49:20.181+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.t.p.ProjectJavaServiceApplication      : No active profile set, falling back to 1 default profile: "default"
+2026-06-11T13:49:21.079+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-11T13:49:21.080+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-11T13:49:21.205+07:00  INFO 7572 --- [project-java-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-19 - Starting...
+2026-06-11T13:49:21.253+07:00  INFO 7572 --- [project-java-service] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-19 - Added connection com.mysql.cj.jdbc.ConnectionImpl@607bd078
+2026-06-11T13:49:21.253+07:00  INFO 7572 --- [project-java-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-19 - Start completed.
+2026-06-11T13:49:21.307+07:00  INFO 7572 --- [project-java-service] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-11T13:49:21.471+07:00  WARN 7572 --- [project-java-service] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-06-11T13:49:21.472+07:00  INFO 7572 --- [project-java-service] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/java-service-pj?createDatabaseIfNotExist=true]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.45
+	Default catalog/schema: java-service-pj/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-11T13:49:22.092+07:00  INFO 7572 --- [project-java-service] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-11T13:49:22.669+07:00  WARN 7572 --- [project-java-service] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'authController' defined in file [C:\Users\admin\IdeaProjects\JavaWebService\project-java-service\build\classes\java\main\org\test\projectjavaservice\controller\AuthController.class]: Unsatisfied dependency expressed through constructor parameter 3: No qualifying bean of type 'org.test.projectjavaservice.service.LogoutService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2026-06-11T13:49:22.670+07:00  INFO 7572 --- [project-java-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-19 - Shutdown initiated...
+2026-06-11T13:49:22.706+07:00  INFO 7572 --- [project-java-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-19 - Shutdown completed.
+2026-06-11T13:49:22.706+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2026-06-11T13:49:22.756+07:00 ERROR 7572 --- [project-java-service] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 3 of constructor in org.test.projectjavaservice.controller.AuthController required a bean of type 'org.test.projectjavaservice.service.LogoutService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.test.projectjavaservice.service.LogoutService' in your configuration.
+
+2026-06-11T13:49:28.453+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.t.p.ProjectJavaServiceApplication      : Starting ProjectJavaServiceApplication using Java 21.0.11 with PID 7572 (C:\Users\admin\IdeaProjects\JavaWebService\project-java-service\build\classes\java\main started by admin in C:\Users\admin\IdeaProjects\JavaWebService\project-java-service)
+2026-06-11T13:49:28.453+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.t.p.ProjectJavaServiceApplication      : No active profile set, falling back to 1 default profile: "default"
+2026-06-11T13:49:29.439+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-11T13:49:29.442+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-11T13:49:29.638+07:00  INFO 7572 --- [project-java-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-20 - Starting...
+2026-06-11T13:49:29.695+07:00  INFO 7572 --- [project-java-service] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-20 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7fd679eb
+2026-06-11T13:49:29.696+07:00  INFO 7572 --- [project-java-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-20 - Start completed.
+2026-06-11T13:49:29.771+07:00  INFO 7572 --- [project-java-service] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-11T13:49:30.033+07:00  WARN 7572 --- [project-java-service] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-06-11T13:49:30.036+07:00  INFO 7572 --- [project-java-service] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/java-service-pj?createDatabaseIfNotExist=true]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.45
+	Default catalog/schema: java-service-pj/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-11T13:49:30.640+07:00  INFO 7572 --- [project-java-service] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-11T13:49:31.316+07:00  WARN 7572 --- [project-java-service] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'authController' defined in file [C:\Users\admin\IdeaProjects\JavaWebService\project-java-service\build\classes\java\main\org\test\projectjavaservice\controller\AuthController.class]: Unsatisfied dependency expressed through constructor parameter 3: No qualifying bean of type 'org.test.projectjavaservice.service.LogoutService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2026-06-11T13:49:31.318+07:00  INFO 7572 --- [project-java-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-20 - Shutdown initiated...
+2026-06-11T13:49:31.337+07:00  INFO 7572 --- [project-java-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-20 - Shutdown completed.
+2026-06-11T13:49:31.338+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2026-06-11T13:49:31.360+07:00 ERROR 7572 --- [project-java-service] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 3 of constructor in org.test.projectjavaservice.controller.AuthController required a bean of type 'org.test.projectjavaservice.service.LogoutService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.test.projectjavaservice.service.LogoutService' in your configuration.
+
+2026-06-11T13:49:34.026+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.t.p.ProjectJavaServiceApplication      : Starting ProjectJavaServiceApplication using Java 21.0.11 with PID 7572 (C:\Users\admin\IdeaProjects\JavaWebService\project-java-service\build\classes\java\main started by admin in C:\Users\admin\IdeaProjects\JavaWebService\project-java-service)
+2026-06-11T13:49:34.026+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.t.p.ProjectJavaServiceApplication      : No active profile set, falling back to 1 default profile: "default"
+2026-06-11T13:49:34.821+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-11T13:49:34.821+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-11T13:49:34.893+07:00  INFO 7572 --- [project-java-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-21 - Starting...
+2026-06-11T13:49:34.910+07:00  INFO 7572 --- [project-java-service] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-21 - Added connection com.mysql.cj.jdbc.ConnectionImpl@672cc0d8
+2026-06-11T13:49:34.910+07:00  INFO 7572 --- [project-java-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-21 - Start completed.
+2026-06-11T13:49:34.937+07:00  INFO 7572 --- [project-java-service] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-11T13:49:34.997+07:00  WARN 7572 --- [project-java-service] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-06-11T13:49:34.999+07:00  INFO 7572 --- [project-java-service] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/java-service-pj?createDatabaseIfNotExist=true]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.45
+	Default catalog/schema: java-service-pj/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-11T13:49:35.142+07:00  INFO 7572 --- [project-java-service] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-11T13:49:35.347+07:00  WARN 7572 --- [project-java-service] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'authController' defined in file [C:\Users\admin\IdeaProjects\JavaWebService\project-java-service\build\classes\java\main\org\test\projectjavaservice\controller\AuthController.class]: Unsatisfied dependency expressed through constructor parameter 3: No qualifying bean of type 'org.test.projectjavaservice.service.LogoutService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2026-06-11T13:49:35.350+07:00  INFO 7572 --- [project-java-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-21 - Shutdown initiated...
+2026-06-11T13:49:35.402+07:00  INFO 7572 --- [project-java-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-21 - Shutdown completed.
+2026-06-11T13:49:35.403+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2026-06-11T13:49:35.415+07:00 ERROR 7572 --- [project-java-service] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 3 of constructor in org.test.projectjavaservice.controller.AuthController required a bean of type 'org.test.projectjavaservice.service.LogoutService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.test.projectjavaservice.service.LogoutService' in your configuration.
+
+2026-06-11T13:49:36.914+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.t.p.ProjectJavaServiceApplication      : Starting ProjectJavaServiceApplication using Java 21.0.11 with PID 7572 (C:\Users\admin\IdeaProjects\JavaWebService\project-java-service\build\classes\java\main started by admin in C:\Users\admin\IdeaProjects\JavaWebService\project-java-service)
+2026-06-11T13:49:36.915+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.t.p.ProjectJavaServiceApplication      : No active profile set, falling back to 1 default profile: "default"
+2026-06-11T13:49:37.370+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-11T13:49:37.370+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-11T13:49:37.441+07:00  INFO 7572 --- [project-java-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-22 - Starting...
+2026-06-11T13:49:37.465+07:00  INFO 7572 --- [project-java-service] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-22 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7084d260
+2026-06-11T13:49:37.466+07:00  INFO 7572 --- [project-java-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-22 - Start completed.
+2026-06-11T13:49:37.494+07:00  INFO 7572 --- [project-java-service] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-11T13:49:37.562+07:00  WARN 7572 --- [project-java-service] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-06-11T13:49:37.564+07:00  INFO 7572 --- [project-java-service] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/java-service-pj?createDatabaseIfNotExist=true]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.45
+	Default catalog/schema: java-service-pj/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-11T13:49:37.859+07:00  INFO 7572 --- [project-java-service] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-11T13:49:38.293+07:00  WARN 7572 --- [project-java-service] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-11T13:49:38.662+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.t.p.ProjectJavaServiceApplication      : Started ProjectJavaServiceApplication in 1.773 seconds (process running for 2652.577)
+2026-06-11T13:50:20.253+07:00  INFO 7572 --- [project-java-service] [Thread-62] com.zaxxer.hikari.HikariDataSource       : HikariPool-22 - Shutdown initiated...
+2026-06-11T13:50:20.265+07:00  INFO 7572 --- [project-java-service] [Thread-62] com.zaxxer.hikari.HikariDataSource       : HikariPool-22 - Shutdown completed.
+2026-06-11T13:50:20.512+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.t.p.ProjectJavaServiceApplication      : Starting ProjectJavaServiceApplication using Java 21.0.11 with PID 7572 (C:\Users\admin\IdeaProjects\JavaWebService\project-java-service\build\classes\java\main started by admin in C:\Users\admin\IdeaProjects\JavaWebService\project-java-service)
+2026-06-11T13:50:20.513+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.t.p.ProjectJavaServiceApplication      : No active profile set, falling back to 1 default profile: "default"
+2026-06-11T13:50:21.609+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-11T13:50:21.610+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-11T13:50:21.725+07:00  INFO 7572 --- [project-java-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-23 - Starting...
+2026-06-11T13:50:21.763+07:00  INFO 7572 --- [project-java-service] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-23 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4a273d78
+2026-06-11T13:50:21.764+07:00  INFO 7572 --- [project-java-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-23 - Start completed.
+2026-06-11T13:50:21.824+07:00  INFO 7572 --- [project-java-service] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-11T13:50:22.042+07:00  WARN 7572 --- [project-java-service] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-06-11T13:50:22.043+07:00  INFO 7572 --- [project-java-service] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/java-service-pj?createDatabaseIfNotExist=true]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.45
+	Default catalog/schema: java-service-pj/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-11T13:50:22.790+07:00  INFO 7572 --- [project-java-service] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-11T13:50:23.437+07:00  WARN 7572 --- [project-java-service] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'authController' defined in file [C:\Users\admin\IdeaProjects\JavaWebService\project-java-service\build\classes\java\main\org\test\projectjavaservice\controller\AuthController.class]: Unsatisfied dependency expressed through constructor parameter 3: No qualifying bean of type 'org.test.projectjavaservice.service.LogoutService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2026-06-11T13:50:23.440+07:00  INFO 7572 --- [project-java-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-23 - Shutdown initiated...
+2026-06-11T13:50:23.517+07:00  INFO 7572 --- [project-java-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-23 - Shutdown completed.
+2026-06-11T13:50:23.519+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2026-06-11T13:50:23.563+07:00 ERROR 7572 --- [project-java-service] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 3 of constructor in org.test.projectjavaservice.controller.AuthController required a bean of type 'org.test.projectjavaservice.service.LogoutService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.test.projectjavaservice.service.LogoutService' in your configuration.
+
+2026-06-11T13:50:26.135+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.t.p.ProjectJavaServiceApplication      : Starting ProjectJavaServiceApplication using Java 21.0.11 with PID 7572 (C:\Users\admin\IdeaProjects\JavaWebService\project-java-service\build\classes\java\main started by admin in C:\Users\admin\IdeaProjects\JavaWebService\project-java-service)
+2026-06-11T13:50:26.136+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.t.p.ProjectJavaServiceApplication      : No active profile set, falling back to 1 default profile: "default"
+2026-06-11T13:50:26.683+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-11T13:50:26.685+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-11T13:50:26.771+07:00  INFO 7572 --- [project-java-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-24 - Starting...
+2026-06-11T13:50:26.796+07:00  INFO 7572 --- [project-java-service] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-24 - Added connection com.mysql.cj.jdbc.ConnectionImpl@45f85e37
+2026-06-11T13:50:26.797+07:00  INFO 7572 --- [project-java-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-24 - Start completed.
+2026-06-11T13:50:26.823+07:00  INFO 7572 --- [project-java-service] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-11T13:50:26.893+07:00  WARN 7572 --- [project-java-service] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-06-11T13:50:26.895+07:00  INFO 7572 --- [project-java-service] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/java-service-pj?createDatabaseIfNotExist=true]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.45
+	Default catalog/schema: java-service-pj/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-11T13:50:27.064+07:00  INFO 7572 --- [project-java-service] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-11T13:50:27.300+07:00  WARN 7572 --- [project-java-service] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'authController' defined in file [C:\Users\admin\IdeaProjects\JavaWebService\project-java-service\build\classes\java\main\org\test\projectjavaservice\controller\AuthController.class]: Unsatisfied dependency expressed through constructor parameter 3: No qualifying bean of type 'org.test.projectjavaservice.service.LogoutService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2026-06-11T13:50:27.302+07:00  INFO 7572 --- [project-java-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-24 - Shutdown initiated...
+2026-06-11T13:50:27.339+07:00  INFO 7572 --- [project-java-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-24 - Shutdown completed.
+2026-06-11T13:50:27.339+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2026-06-11T13:50:27.351+07:00 ERROR 7572 --- [project-java-service] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 3 of constructor in org.test.projectjavaservice.controller.AuthController required a bean of type 'org.test.projectjavaservice.service.LogoutService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.test.projectjavaservice.service.LogoutService' in your configuration.
+
+2026-06-11T13:50:28.836+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.t.p.ProjectJavaServiceApplication      : Starting ProjectJavaServiceApplication using Java 21.0.11 with PID 7572 (C:\Users\admin\IdeaProjects\JavaWebService\project-java-service\build\classes\java\main started by admin in C:\Users\admin\IdeaProjects\JavaWebService\project-java-service)
+2026-06-11T13:50:28.836+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.t.p.ProjectJavaServiceApplication      : No active profile set, falling back to 1 default profile: "default"
+2026-06-11T13:50:29.245+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-11T13:50:29.245+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-11T13:50:29.301+07:00  INFO 7572 --- [project-java-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-25 - Starting...
+2026-06-11T13:50:29.321+07:00  INFO 7572 --- [project-java-service] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-25 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6e49d351
+2026-06-11T13:50:29.321+07:00  INFO 7572 --- [project-java-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-25 - Start completed.
+2026-06-11T13:50:29.351+07:00  INFO 7572 --- [project-java-service] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-11T13:50:29.422+07:00  WARN 7572 --- [project-java-service] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-06-11T13:50:29.423+07:00  INFO 7572 --- [project-java-service] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/java-service-pj?createDatabaseIfNotExist=true]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.45
+	Default catalog/schema: java-service-pj/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-11T13:50:29.555+07:00  INFO 7572 --- [project-java-service] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-11T13:50:29.821+07:00  WARN 7572 --- [project-java-service] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-11T13:50:30.119+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.t.p.ProjectJavaServiceApplication      : Started ProjectJavaServiceApplication in 1.312 seconds (process running for 2704.034)
+2026-06-11T13:51:17.909+07:00  INFO 7572 --- [project-java-service] [Thread-75] com.zaxxer.hikari.HikariDataSource       : HikariPool-25 - Shutdown initiated...
+2026-06-11T13:51:17.916+07:00  INFO 7572 --- [project-java-service] [Thread-75] com.zaxxer.hikari.HikariDataSource       : HikariPool-25 - Shutdown completed.
+2026-06-11T13:51:18.146+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.t.p.ProjectJavaServiceApplication      : Starting ProjectJavaServiceApplication using Java 21.0.11 with PID 7572 (C:\Users\admin\IdeaProjects\JavaWebService\project-java-service\build\classes\java\main started by admin in C:\Users\admin\IdeaProjects\JavaWebService\project-java-service)
+2026-06-11T13:51:18.147+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.t.p.ProjectJavaServiceApplication      : No active profile set, falling back to 1 default profile: "default"
+2026-06-11T13:51:19.379+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-11T13:51:19.380+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-11T13:51:19.490+07:00  INFO 7572 --- [project-java-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-26 - Starting...
+2026-06-11T13:51:19.522+07:00  INFO 7572 --- [project-java-service] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-26 - Added connection com.mysql.cj.jdbc.ConnectionImpl@14c74524
+2026-06-11T13:51:19.523+07:00  INFO 7572 --- [project-java-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-26 - Start completed.
+2026-06-11T13:51:19.570+07:00  INFO 7572 --- [project-java-service] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-11T13:51:19.714+07:00  WARN 7572 --- [project-java-service] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-06-11T13:51:19.715+07:00  INFO 7572 --- [project-java-service] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/java-service-pj?createDatabaseIfNotExist=true]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.45
+	Default catalog/schema: java-service-pj/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-11T13:51:19.964+07:00  INFO 7572 --- [project-java-service] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-11T13:51:20.187+07:00  WARN 7572 --- [project-java-service] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adminController': Unsatisfied dependency expressed through field 'adminService': No qualifying bean of type 'org.test.projectjavaservice.service.AdminService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2026-06-11T13:51:20.188+07:00  INFO 7572 --- [project-java-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-26 - Shutdown initiated...
+2026-06-11T13:51:20.197+07:00  INFO 7572 --- [project-java-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-26 - Shutdown completed.
+2026-06-11T13:51:20.198+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2026-06-11T13:51:20.221+07:00 ERROR 7572 --- [project-java-service] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field adminService in org.test.projectjavaservice.controller.AdminController required a bean of type 'org.test.projectjavaservice.service.AdminService' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'org.test.projectjavaservice.service.AdminService' in your configuration.
+
+2026-06-11T13:51:21.827+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.t.p.ProjectJavaServiceApplication      : Starting ProjectJavaServiceApplication using Java 21.0.11 with PID 7572 (C:\Users\admin\IdeaProjects\JavaWebService\project-java-service\build\classes\java\main started by admin in C:\Users\admin\IdeaProjects\JavaWebService\project-java-service)
+2026-06-11T13:51:21.827+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.t.p.ProjectJavaServiceApplication      : No active profile set, falling back to 1 default profile: "default"
+2026-06-11T13:51:23.260+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-11T13:51:23.261+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-11T13:51:23.418+07:00  INFO 7572 --- [project-java-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-27 - Starting...
+2026-06-11T13:51:23.450+07:00  INFO 7572 --- [project-java-service] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-27 - Added connection com.mysql.cj.jdbc.ConnectionImpl@59d75f5
+2026-06-11T13:51:23.450+07:00  INFO 7572 --- [project-java-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-27 - Start completed.
+2026-06-11T13:51:23.520+07:00  INFO 7572 --- [project-java-service] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-11T13:51:23.643+07:00  WARN 7572 --- [project-java-service] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-06-11T13:51:23.645+07:00  INFO 7572 --- [project-java-service] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/java-service-pj?createDatabaseIfNotExist=true]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.45
+	Default catalog/schema: java-service-pj/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-11T13:51:24.103+07:00  INFO 7572 --- [project-java-service] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-11T13:51:24.824+07:00  WARN 7572 --- [project-java-service] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-11T13:51:25.387+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.t.p.ProjectJavaServiceApplication      : Started ProjectJavaServiceApplication in 3.61 seconds (process running for 2759.302)
+2026-06-11T13:51:56.895+07:00  INFO 7572 --- [project-java-service] [http-nio-8080-exec-3] o.a.c.c.C.[Tomcat-17].[localhost].[/]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-11T13:53:51.154+07:00  INFO 7572 --- [project-java-service] [Thread-85] com.zaxxer.hikari.HikariDataSource       : HikariPool-27 - Shutdown initiated...
+2026-06-11T13:53:51.162+07:00  INFO 7572 --- [project-java-service] [Thread-85] com.zaxxer.hikari.HikariDataSource       : HikariPool-27 - Shutdown completed.
+2026-06-11T13:53:51.516+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.t.p.ProjectJavaServiceApplication      : Starting ProjectJavaServiceApplication using Java 21.0.11 with PID 7572 (C:\Users\admin\IdeaProjects\JavaWebService\project-java-service\build\classes\java\main started by admin in C:\Users\admin\IdeaProjects\JavaWebService\project-java-service)
+2026-06-11T13:53:51.516+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.t.p.ProjectJavaServiceApplication      : No active profile set, falling back to 1 default profile: "default"
+2026-06-11T13:53:52.888+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-11T13:53:52.888+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-11T13:53:53.055+07:00  INFO 7572 --- [project-java-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-28 - Starting...
+2026-06-11T13:53:53.097+07:00  INFO 7572 --- [project-java-service] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-28 - Added connection com.mysql.cj.jdbc.ConnectionImpl@591507b0
+2026-06-11T13:53:53.098+07:00  INFO 7572 --- [project-java-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-28 - Start completed.
+2026-06-11T13:53:53.156+07:00  INFO 7572 --- [project-java-service] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-11T13:53:53.373+07:00  WARN 7572 --- [project-java-service] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-06-11T13:53:53.377+07:00  INFO 7572 --- [project-java-service] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/java-service-pj?createDatabaseIfNotExist=true]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.45
+	Default catalog/schema: java-service-pj/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-11T13:53:53.802+07:00  INFO 7572 --- [project-java-service] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-11T13:53:54.355+07:00  WARN 7572 --- [project-java-service] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'authController' defined in file [C:\Users\admin\IdeaProjects\JavaWebService\project-java-service\build\classes\java\main\org\test\projectjavaservice\controller\AuthController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'authServiceImpl': Unsatisfied dependency expressed through field 'passwordEncoder': No qualifying bean of type 'org.springframework.security.crypto.password.PasswordEncoder' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2026-06-11T13:53:54.360+07:00  INFO 7572 --- [project-java-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-28 - Shutdown initiated...
+2026-06-11T13:53:54.370+07:00  INFO 7572 --- [project-java-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-28 - Shutdown completed.
+2026-06-11T13:53:54.371+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2026-06-11T13:53:54.416+07:00 ERROR 7572 --- [project-java-service] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field passwordEncoder in org.test.projectjavaservice.service.impl.AuthServiceImpl required a bean of type 'org.springframework.security.crypto.password.PasswordEncoder' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.security.crypto.password.PasswordEncoder' in your configuration.
+
+2026-06-11T13:53:56.032+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.t.p.ProjectJavaServiceApplication      : Starting ProjectJavaServiceApplication using Java 21.0.11 with PID 7572 (C:\Users\admin\IdeaProjects\JavaWebService\project-java-service\build\classes\java\main started by admin in C:\Users\admin\IdeaProjects\JavaWebService\project-java-service)
+2026-06-11T13:53:56.033+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.t.p.ProjectJavaServiceApplication      : No active profile set, falling back to 1 default profile: "default"
+2026-06-11T13:53:57.917+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-11T13:53:57.918+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-11T13:53:58.154+07:00  INFO 7572 --- [project-java-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-29 - Starting...
+2026-06-11T13:53:58.207+07:00  INFO 7572 --- [project-java-service] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-29 - Added connection com.mysql.cj.jdbc.ConnectionImpl@221441c8
+2026-06-11T13:53:58.209+07:00  INFO 7572 --- [project-java-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-29 - Start completed.
+2026-06-11T13:53:58.307+07:00  INFO 7572 --- [project-java-service] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-11T13:53:58.565+07:00  WARN 7572 --- [project-java-service] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-06-11T13:53:58.567+07:00  INFO 7572 --- [project-java-service] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/java-service-pj?createDatabaseIfNotExist=true]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.45
+	Default catalog/schema: java-service-pj/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-11T13:53:58.958+07:00  INFO 7572 --- [project-java-service] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-11T13:53:59.463+07:00  WARN 7572 --- [project-java-service] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-11T13:54:00.248+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.t.p.ProjectJavaServiceApplication      : Started ProjectJavaServiceApplication in 4.296 seconds (process running for 2914.163)
+2026-06-11T13:58:50.053+07:00  INFO 7572 --- [project-java-service] [Thread-92] com.zaxxer.hikari.HikariDataSource       : HikariPool-29 - Shutdown initiated...
+2026-06-11T13:58:50.064+07:00  INFO 7572 --- [project-java-service] [Thread-92] com.zaxxer.hikari.HikariDataSource       : HikariPool-29 - Shutdown completed.
+2026-06-11T13:58:50.323+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.t.p.ProjectJavaServiceApplication      : Starting ProjectJavaServiceApplication using Java 21.0.11 with PID 7572 (C:\Users\admin\IdeaProjects\JavaWebService\project-java-service\build\classes\java\main started by admin in C:\Users\admin\IdeaProjects\JavaWebService\project-java-service)
+2026-06-11T13:58:50.323+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.t.p.ProjectJavaServiceApplication      : No active profile set, falling back to 1 default profile: "default"
+2026-06-11T13:58:51.243+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-11T13:58:51.243+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-11T13:58:51.333+07:00  INFO 7572 --- [project-java-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-30 - Starting...
+2026-06-11T13:58:51.358+07:00  INFO 7572 --- [project-java-service] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-30 - Added connection com.mysql.cj.jdbc.ConnectionImpl@47b354e9
+2026-06-11T13:58:51.359+07:00  INFO 7572 --- [project-java-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-30 - Start completed.
+2026-06-11T13:58:51.394+07:00  INFO 7572 --- [project-java-service] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-11T13:58:51.476+07:00  WARN 7572 --- [project-java-service] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-06-11T13:58:51.477+07:00  INFO 7572 --- [project-java-service] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/java-service-pj?createDatabaseIfNotExist=true]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.45
+	Default catalog/schema: java-service-pj/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-11T13:58:51.668+07:00  INFO 7572 --- [project-java-service] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-11T13:58:52.320+07:00  WARN 7572 --- [project-java-service] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-11T13:58:52.724+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.t.p.ProjectJavaServiceApplication      : Started ProjectJavaServiceApplication in 2.488 seconds (process running for 3206.64)
+2026-06-11T14:05:52.897+07:00  INFO 7572 --- [project-java-service] [Thread-99] com.zaxxer.hikari.HikariDataSource       : HikariPool-30 - Shutdown initiated...
+2026-06-11T14:05:52.909+07:00  INFO 7572 --- [project-java-service] [Thread-99] com.zaxxer.hikari.HikariDataSource       : HikariPool-30 - Shutdown completed.
+2026-06-11T14:05:53.245+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.t.p.ProjectJavaServiceApplication      : Starting ProjectJavaServiceApplication using Java 21.0.11 with PID 7572 (C:\Users\admin\IdeaProjects\JavaWebService\project-java-service\build\classes\java\main started by admin in C:\Users\admin\IdeaProjects\JavaWebService\project-java-service)
+2026-06-11T14:05:53.247+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.t.p.ProjectJavaServiceApplication      : No active profile set, falling back to 1 default profile: "default"
+2026-06-11T14:05:55.035+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-11T14:05:55.035+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-11T14:05:55.257+07:00  INFO 7572 --- [project-java-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-31 - Starting...
+2026-06-11T14:05:55.320+07:00  INFO 7572 --- [project-java-service] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-31 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7076e266
+2026-06-11T14:05:55.321+07:00  INFO 7572 --- [project-java-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-31 - Start completed.
+2026-06-11T14:05:55.420+07:00  INFO 7572 --- [project-java-service] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-11T14:05:55.702+07:00  WARN 7572 --- [project-java-service] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-06-11T14:05:55.705+07:00  INFO 7572 --- [project-java-service] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/java-service-pj?createDatabaseIfNotExist=true]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.45
+	Default catalog/schema: java-service-pj/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-11T14:05:56.628+07:00  INFO 7572 --- [project-java-service] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-11T14:05:57.270+07:00  WARN 7572 --- [project-java-service] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'authController' defined in file [C:\Users\admin\IdeaProjects\JavaWebService\project-java-service\build\classes\java\main\org\test\projectjavaservice\controller\AuthController.class]: Unsatisfied dependency expressed through constructor parameter 1: No qualifying bean of type 'org.test.projectjavaservice.service.SecurityAuthService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2026-06-11T14:05:57.271+07:00  INFO 7572 --- [project-java-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-31 - Shutdown initiated...
+2026-06-11T14:05:57.279+07:00  INFO 7572 --- [project-java-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-31 - Shutdown completed.
+2026-06-11T14:05:57.281+07:00  INFO 7572 --- [project-java-service] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2026-06-11T14:05:57.311+07:00 ERROR 7572 --- [project-java-service] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 1 of constructor in org.test.projectjavaservice.controller.AuthController required a bean of type 'org.test.projectjavaservice.service.SecurityAuthService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.test.projectjavaservice.service.SecurityAuthService' in your configuration.
+

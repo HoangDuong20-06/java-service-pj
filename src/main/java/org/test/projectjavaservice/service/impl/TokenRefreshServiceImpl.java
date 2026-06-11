@@ -29,7 +29,6 @@ public class TokenRefreshServiceImpl implements TokenRefreshService {
         }
         User user = token.getUser();
         String newAccessToken = jwtTokenProvider.generateAccessToken(user);
-
         return JwtResponse.builder()
                 .accessToken(newAccessToken)
                 .refreshToken(token.getToken())

@@ -9,6 +9,7 @@ import org.test.projectjavaservice.modal.Court;
 import org.test.projectjavaservice.modal.TimeSlot;
 import org.test.projectjavaservice.modal.User;
 import org.test.projectjavaservice.modal.dto.req.BookingRequest;
+import org.test.projectjavaservice.modal.dto.req.UpdateBookingStatusRequest;
 import org.test.projectjavaservice.modal.dto.res.BookingResponse;
 import org.test.projectjavaservice.repository.BookingRepository;
 import org.test.projectjavaservice.repository.CourtRepository;
@@ -17,6 +18,7 @@ import org.test.projectjavaservice.repository.UserRepository;
 import org.test.projectjavaservice.service.BookingService;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Service
 public class BookingServiceImpl implements BookingService {
@@ -66,6 +68,52 @@ public class BookingServiceImpl implements BookingService {
         dto.setStatus(savedBooking.getStatus());
         dto.setCustomerName(user.getFullName());
 
+        return dto;
+    }
+
+    @Override
+    public List<BookingResponse> getMyBookingHistory(String currentUsername) {
+        User user = userRepository.findByUsername(currentUsername)
+                .orElseThrow(() -> new ResponseStatusException(HttpStatus.UNAUTHORIZED, "Tài khoản không tồn tại"));
+        List<Booking> myBookings = bookingRepository.findAllByUserIdOrderByBookingDateDesc(user.getId());
+        return myBookings.stream()
+                .map(booking -> {
+                    BookingResponse dto = new BookingResponse();
+                    dto.setId(booking.getId());
+                    dto.setCourtId(booking.getCourt().getId());
+                    dto.setCourtName(booking.getCourt().getCourtName());
+                    dto.setBookingDate(booking.getBookingDate());
+                    dto.setTimeSlotId(booking.getTimeSlot().getId());
+                    dto.setTimeSlotDisplay(booking.getTimeSlot().getStartTime() + " - " + booking.getTimeSlot().getEndTime());
+                    dto.setStatus(booking.getStatus());
+                    dto.setCustomerName(user.getFullName());
+                    return dto;
+                })
+                .collect(Collectors.toList());
+    }
+
+    @Override
+    public BookingResponse updateStatus(Long bookingId, UpdateBookingStatusRequest request) {
+        Booking booking = bookingRepository.findById(bookingId)
+                .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "Không tìm thấy đơn đặt sân này"));
+
+        String newStatus = request.getStatus().toUpperCase();
+        if (!newStatus.equals("CONFIRMED") && !newStatus.equals("CANCELLED")) {
+            throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "Trạng thái cập nhật không hợp lệ (Chỉ nhận CONFIRMED hoặc CANCELLED)");
+        }
+
+        if (!booking.getStatus().equals("PENDING")) {
+            throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "Đơn đặt sân này đã được xử lý từ trước, không thể thay đổi trạng thái nữa!");
+        }
+        booking.setStatus(newStatus);
+        Booking updatedBooking = bookingRepository.save(booking);
+        BookingResponse dto = new BookingResponse();
+        dto.setId(updatedBooking.getId());
+        dto.setCourtId(updatedBooking.getCourt().getId());
+        dto.setCourtName(updatedBooking.getCourt().getCourtName());
+        dto.setBookingDate(updatedBooking.getBookingDate());
+        dto.setStatus(updatedBooking.getStatus());
+        dto.setCustomerName(updatedBooking.getUser().getFullName());
         return dto;
     }
 }

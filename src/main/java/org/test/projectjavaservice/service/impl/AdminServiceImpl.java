@@ -6,10 +6,12 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.test.projectjavaservice.modal.Role;
 import org.test.projectjavaservice.modal.User;
+import org.test.projectjavaservice.modal.dto.req.UpdateUserRequest;
 import org.test.projectjavaservice.modal.dto.res.UserResponse;
 import org.test.projectjavaservice.repository.UserRepository;
 import org.test.projectjavaservice.service.AdminService;
 
+import java.time.LocalDateTime;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -21,8 +23,7 @@ public class AdminServiceImpl implements AdminService {
     @Override
     public List<UserResponse> searchAndFilterUsers(String nameKeyword) {
         return userRepository
-                .findByFullNameContainingIgnoreCase(nameKeyword, Pageable.unpaged()
-                )
+                .findByFullNameContainingIgnoreCase(nameKeyword, Pageable.unpaged())
                 .getContent()
                 .stream()
                 .map(user -> {
@@ -38,4 +39,34 @@ public class AdminServiceImpl implements AdminService {
                 })
                 .toList();
     }
+
+    @Override
+    public UserResponse updateUser(Long id, UpdateUserRequest request) {
+        User user = userRepository.findById(id)
+                .orElseThrow(() -> new RuntimeException("User not found with id: " + id));
+        if (request.getFullName() != null) {
+            user.setFullName(request.getFullName());
+        }
+
+        if (request.getEmail() != null) {
+            user.setEmail(request.getEmail());
+        }
+
+        if (request.getPhoneNumber() != null) {
+            user.setPhoneNumber(request.getPhoneNumber());
+        }
+        if (request.getIsEnabled() != null) {
+            user.setIsEnabled(request.getIsEnabled());
+        }
+        User saved = userRepository.save(user);
+        UserResponse response = new UserResponse();
+        response.setId(saved.getId());
+        response.setUsername(saved.getUsername());
+        response.setFullName(saved.getFullName());
+        response.setEmail(saved.getEmail());
+        response.setPhoneNumber(saved.getPhoneNumber());
+        response.setIsEnabled(saved.getIsEnabled());
+        return response;
+    }
+
 }

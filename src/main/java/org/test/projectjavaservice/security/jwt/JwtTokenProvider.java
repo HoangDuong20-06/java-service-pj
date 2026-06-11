@@ -21,64 +21,43 @@ public class JwtTokenProvider {
     private long jwtExpiration;
 
     public String generateAccessToken(User user) {
-
         Date now = new Date();
-
-        Date expiryDate = new Date(
-                now.getTime() + jwtExpiration
-        );
-
+        Date expiryDate = new Date(now.getTime() + jwtExpiration);
         return Jwts.builder()
                 .setSubject(user.getUsername())
                 .claim("role", user.getRole())
                 .setIssuedAt(now)
                 .setExpiration(expiryDate)
-                .signWith(
-                        Keys.hmacShaKeyFor(jwtSecret.getBytes()),
-                        SignatureAlgorithm.HS256
-                )
+                .signWith(Keys.hmacShaKeyFor(jwtSecret.getBytes()), SignatureAlgorithm.HS256)
                 .compact();
     }
-
     public String getUsernameFromToken(String token) {
-
         return Jwts.parser()
-                .setSigningKey(
-                        Keys.hmacShaKeyFor(jwtSecret.getBytes())
-                )
+                .setSigningKey(Keys.hmacShaKeyFor(jwtSecret.getBytes()))
                 .build()
                 .parseClaimsJws(token)
                 .getBody()
                 .getSubject();
     }
-
     public boolean validateToken(String token) {
-
         try {
             Jwts.parser()
-                    .setSigningKey(
-                            Keys.hmacShaKeyFor(jwtSecret.getBytes())
-                    )
+                    .setSigningKey(Keys.hmacShaKeyFor(jwtSecret.getBytes()))
                     .build()
                     .parseClaimsJws(token);
 
             return true;
-
         } catch (Exception e) {
             return false;
         }
     }
-
     public LocalDateTime getExpirationDateFromToken(String token) {
         Date expirationDate = Jwts.parser()
-                .setSigningKey(
-                        Keys.hmacShaKeyFor(jwtSecret.getBytes())
-                )
+                .setSigningKey(Keys.hmacShaKeyFor(jwtSecret.getBytes()))
                 .build()
                 .parseClaimsJws(token)
                 .getBody()
                 .getExpiration();
-
         return expirationDate.toInstant()
                 .atZone(ZoneId.systemDefault())
                 .toLocalDateTime();

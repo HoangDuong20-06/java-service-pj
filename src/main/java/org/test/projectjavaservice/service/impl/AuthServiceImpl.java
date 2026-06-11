@@ -7,10 +7,15 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.server.ResponseStatusException;
 import org.test.projectjavaservice.modal.Role;
 import org.test.projectjavaservice.modal.User;
+import org.test.projectjavaservice.modal.dto.req.ChangePasswordRequest;
+import org.test.projectjavaservice.modal.dto.req.ForgotPasswordRequest;
 import org.test.projectjavaservice.modal.dto.req.RegisterRequest;
 import org.test.projectjavaservice.modal.dto.res.UserResponse;
 import org.test.projectjavaservice.repository.UserRepository;
 import org.test.projectjavaservice.service.AuthService;
+
+import java.util.UUID;
+
 @Service
 public class AuthServiceImpl implements AuthService {
     @Autowired
@@ -34,11 +39,9 @@ public class AuthServiceImpl implements AuthService {
         user.setPhoneNumber(request.getPhoneNumber());
         user.setRole(Role.CUSTOMER);
         user.setIsEnabled(true);
-
         User savedUser = userRepository.save(user);
         return convertToResponseDTO(savedUser);
     }
-
     @Override
     public UserResponse convertToResponseDTO(User user) {
         UserResponse dto = new UserResponse();
@@ -50,5 +53,26 @@ public class AuthServiceImpl implements AuthService {
         dto.setRole(user.getRole());
         dto.setIsEnabled(user.getIsEnabled());
         return dto;
+    }
+
+    @Override
+    public void changePassword(ChangePasswordRequest request, String currentUsername) {
+        User user = userRepository.findByUsername(currentUsername)
+                .orElseThrow(() -> new ResponseStatusException(HttpStatus.UNAUTHORIZED, "Tài khoản không tồn tại"));
+        if (!passwordEncoder.matches(request.getOldPassword(), user.getPassword())) {
+            throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "Mật khẩu cũ không chính xác!");
+        }
+        user.setPassword(passwordEncoder.encode(request.getNewPassword()));
+        userRepository.save(user);
+    }
+
+    @Override
+    public void resetPassword(ForgotPasswordRequest request) {
+        User user = userRepository.findByEmail(request.getEmail())
+                .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "Không tìm thấy tài khoản gắn liền với Email này"));
+        String temporaryPassword = UUID.randomUUID().toString().substring(0, 8);
+        user.setPassword(passwordEncoder.encode(temporaryPassword));
+        userRepository.save(user);
+        System.out.printf("Mật khẩu mới cấp lại của User %s là: %s%n", user.getUsername(), temporaryPassword);
     }
 }

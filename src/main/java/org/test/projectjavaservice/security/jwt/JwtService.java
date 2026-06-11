@@ -16,7 +16,6 @@ public class JwtService {
     private String secretKey;
 
     public String generateToken(UserPrincipal user) {
-
         return Jwts.builder()
                 .setSubject(user.getUsername())
                 .claim("role", user.getRole())
@@ -25,7 +24,6 @@ public class JwtService {
                 .signWith(Keys.hmacShaKeyFor(secretKey.getBytes()), SignatureAlgorithm.HS256)
                 .compact();
     }
-
     public String extractUsername(String token) {
         return Jwts.parser()
                 .setSigningKey(Keys.hmacShaKeyFor(secretKey.getBytes()))
@@ -34,14 +32,12 @@ public class JwtService {
                 .getBody()
                 .getSubject();
     }
-
     public boolean isTokenValid(String token) {
         try {
             Jwts.parser()
                     .setSigningKey(Keys.hmacShaKeyFor(secretKey.getBytes()))
                     .build()
                     .parseClaimsJws(token);
-
             return true;
         } catch (Exception e) {
             return false;

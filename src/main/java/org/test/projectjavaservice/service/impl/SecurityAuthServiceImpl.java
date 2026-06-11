@@ -34,7 +34,6 @@ public class SecurityAuthServiceImpl implements SecurityAuthService {
         String accessToken = jwtTokenProvider.generateAccessToken(user);
         String refreshTokenStr = UUID.randomUUID().toString();
         RefreshToken refreshToken = refreshTokenRepository.findByUser(user).orElse(new RefreshToken());
-
         refreshToken.setUser(user);
         refreshToken.setToken(refreshTokenStr);
         refreshToken.setExpiryDate(Instant.now().plusMillis(7 * 24 * 60 * 60 * 1000));

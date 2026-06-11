@@ -2,10 +2,14 @@ package org.test.projectjavaservice.service.impl;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Service;
 import org.springframework.web.server.ResponseStatusException;
 import org.test.projectjavaservice.modal.TokenBlacklist;
+import org.test.projectjavaservice.modal.User;
 import org.test.projectjavaservice.repository.TokenBlacklistRepository;
+import org.test.projectjavaservice.repository.UserRepository;
 import org.test.projectjavaservice.security.jwt.JwtTokenProvider;
 import org.test.projectjavaservice.service.LogoutService;
 
@@ -16,6 +20,7 @@ import java.time.LocalDateTime;
 public class LogoutServiceImpl implements LogoutService {
     private final JwtTokenProvider jwtTokenProvider;
     private final TokenBlacklistRepository tokenBlacklistRepository;
+    private final UserRepository userRepository;
     @Override
     public void logout(String authorizationHeader) {
         if (authorizationHeader == null || !authorizationHeader.startsWith("Bearer ")) {
@@ -23,9 +28,13 @@ public class LogoutServiceImpl implements LogoutService {
         }
         String token = authorizationHeader.substring(7);
         LocalDateTime expiryTime = jwtTokenProvider.getExpirationDateFromToken(token);
+        Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+        String username = authentication.getName();
+        User user = userRepository.findByUsername(username).orElseThrow(() -> new RuntimeException("User not found"));
         TokenBlacklist blacklistedToken = new TokenBlacklist();
         blacklistedToken.setToken(token);
         blacklistedToken.setExpiryTime(expiryTime);
+        blacklistedToken.setUser(user);
         tokenBlacklistRepository.save(blacklistedToken);
     }
 }

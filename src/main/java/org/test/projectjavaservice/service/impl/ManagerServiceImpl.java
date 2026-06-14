@@ -9,6 +9,7 @@ import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.server.ResponseStatusException;
 import org.test.projectjavaservice.modal.Court;
 import org.test.projectjavaservice.modal.CourtImage;
+import org.test.projectjavaservice.repository.CourtImageRepository;
 import org.test.projectjavaservice.repository.CourtRepository;
 import org.test.projectjavaservice.service.ManagerSevice;
 
@@ -22,6 +23,7 @@ import java.util.Map;
 public class ManagerServiceImpl implements ManagerSevice {
     private final CourtRepository courtRepository;
     private final Cloudinary cloudinary;
+    private final CourtImageRepository courtImageRepository;
     @Override
     public List<String> uploadCourtImages(Long courtId, List<MultipartFile> files) {
         Court court = courtRepository.findById(courtId)
@@ -37,7 +39,7 @@ public class ManagerServiceImpl implements ManagerSevice {
                 CourtImage image = new CourtImage();
                 image.setCourt(court);
                 image.setImageUrl(secureUrl);
-                courtRepository.save(image);
+                courtImageRepository.save(image);
                 urls.add(secureUrl);
             } catch (IOException e) {
                 throw new RuntimeException("Cloudinary upload failed", e);

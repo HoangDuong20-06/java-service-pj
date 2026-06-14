@@ -28,6 +28,11 @@ public class SecurityAuthServiceImpl implements SecurityAuthService {
     public JwtResponse authenticateUser(LoginRequest request) {
         User user = userRepository.findByUsername(request.getUsername())
                 .orElseThrow(() -> new ResponseStatusException(HttpStatus.UNAUTHORIZED, "Username or password is incorrect"));
+        if (!Boolean.TRUE.equals(user.getIsEnabled())) {
+            throw new ResponseStatusException(
+                    HttpStatus.FORBIDDEN,
+                    "Tài khoản đã bị vô hiệu hóa");
+        }
         if (!passwordEncoder.matches(request.getPassword(), user.getPassword())) {
             throw new ResponseStatusException(HttpStatus.UNAUTHORIZED, "Username or password is incorrect");
         }

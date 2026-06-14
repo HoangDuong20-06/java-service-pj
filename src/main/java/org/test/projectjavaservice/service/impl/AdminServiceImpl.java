@@ -21,9 +21,7 @@ public class AdminServiceImpl implements AdminService {
     private UserRepository userRepository;
     @Override
     public Page<UserResponse> getUsers(String keyword, Pageable pageable) {
-
         Page<User> users;
-
         if (keyword == null || keyword.isBlank()) {
             users = userRepository.findByIsEnabledTrue(pageable);
         } else {

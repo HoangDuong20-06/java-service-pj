@@ -58,9 +58,9 @@ public class AuthServiceImpl implements AuthService {
     @Override
     public void changePassword(ChangePasswordRequest request, String currentUsername) {
         User user = userRepository.findByUsername(currentUsername)
-                .orElseThrow(() -> new ResponseStatusException(HttpStatus.UNAUTHORIZED, "Tài khoản không tồn tại"));
+                .orElseThrow(() -> new ResponseStatusException(HttpStatus.UNAUTHORIZED, "Account not exist"));
         if (!passwordEncoder.matches(request.getOldPassword(), user.getPassword())) {
-            throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "Mật khẩu cũ không chính xác!");
+            throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "Old password is incorrect!");
         }
         user.setPassword(passwordEncoder.encode(request.getNewPassword()));
         userRepository.save(user);
@@ -69,10 +69,10 @@ public class AuthServiceImpl implements AuthService {
     @Override
     public void resetPassword(ForgotPasswordRequest request) {
         User user = userRepository.findByEmail(request.getEmail())
-                .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "Không tìm thấy tài khoản gắn liền với Email này"));
+                .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "Not found account linked with email"));
         String temporaryPassword = UUID.randomUUID().toString().substring(0, 8);
         user.setPassword(passwordEncoder.encode(temporaryPassword));
         userRepository.save(user);
-        System.out.printf("Mật khẩu mới cấp lại của User %s là: %s%n", user.getUsername(), temporaryPassword);
+        System.out.printf("New password for User %s is: %s%n", user.getUsername(), temporaryPassword);
     }
 }

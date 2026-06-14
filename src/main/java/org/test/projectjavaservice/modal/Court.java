@@ -17,7 +17,8 @@ public class Court {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String courtName;
-    private String imageUrl;
+    @OneToMany(mappedBy = "court")
+    private List<CourtImage> images;
     private Boolean isAvailable;
 
     @ManyToOne

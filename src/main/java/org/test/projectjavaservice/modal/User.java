@@ -24,7 +24,7 @@ public class User {
     private Role role;
     private String email;
     private String phoneNumber;
-    private Boolean isEnabled;
+    private Boolean isEnabled = true;
 
     @OneToMany(mappedBy = "user")
     private List<Booking> bookings;

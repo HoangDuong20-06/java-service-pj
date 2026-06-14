@@ -2,12 +2,11 @@ package org.test.projectjavaservice.service.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Service;
 import org.springframework.web.server.ResponseStatusException;
-import org.test.projectjavaservice.modal.Booking;
-import org.test.projectjavaservice.modal.Court;
-import org.test.projectjavaservice.modal.TimeSlot;
-import org.test.projectjavaservice.modal.User;
+import org.test.projectjavaservice.modal.*;
 import org.test.projectjavaservice.modal.dto.req.BookingRequest;
 import org.test.projectjavaservice.modal.dto.req.UpdateBookingStatusRequest;
 import org.test.projectjavaservice.modal.dto.res.BookingResponse;
@@ -74,7 +73,7 @@ public class BookingServiceImpl implements BookingService {
     @Override
     public List<BookingResponse> getMyBookingHistory(String currentUsername) {
         User user = userRepository.findByUsername(currentUsername)
-                .orElseThrow(() -> new ResponseStatusException(HttpStatus.UNAUTHORIZED, "Tài khoản không tồn tại"));
+                .orElseThrow(() -> new ResponseStatusException(HttpStatus.UNAUTHORIZED, "Account not exist"));
         List<Booking> myBookings = bookingRepository.findAllByUserIdOrderByBookingDateDesc(user.getId());
         return myBookings.stream()
                 .map(booking -> {
@@ -95,15 +94,27 @@ public class BookingServiceImpl implements BookingService {
     @Override
     public BookingResponse updateStatus(Long bookingId, UpdateBookingStatusRequest request) {
         Booking booking = bookingRepository.findById(bookingId)
-                .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "Không tìm thấy đơn đặt sân này"));
+                .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "Not found booking"));
+        Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+        String username = authentication.getName();
+        User currentUser = userRepository.findByUsername(username)
+                .orElseThrow(() -> new ResponseStatusException(HttpStatus.UNAUTHORIZED, "User not found"));
+        if (currentUser.getRole() == Role.MANAGER) {
+            Long managerId = booking.getCourt()
+                    .getCluster()
+                    .getManager()
+                    .getId();
+            if (!managerId.equals(currentUser.getId())) {
+                throw new ResponseStatusException(HttpStatus.FORBIDDEN, "Bạn không quản lý sân này");
+            }
+        }
 
         String newStatus = request.getStatus().toUpperCase();
         if (!newStatus.equals("CONFIRMED") && !newStatus.equals("CANCELLED")) {
-            throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "Trạng thái cập nhật không hợp lệ (Chỉ nhận CONFIRMED hoặc CANCELLED)");
+            throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "Status must be CONFIRMED or CANCELLED");
         }
-
         if (!booking.getStatus().equals("PENDING")) {
-            throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "Đơn đặt sân này đã được xử lý từ trước, không thể thay đổi trạng thái nữa!");
+            throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "Booking status must be PENDING");
         }
         booking.setStatus(newStatus);
         Booking updatedBooking = bookingRepository.save(booking);

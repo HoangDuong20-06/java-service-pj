@@ -21,7 +21,7 @@ import java.util.List;
 @RequestMapping("/api/v1/customer/")
 @RequiredArgsConstructor
 @PreAuthorize("isAuthenticated()")
-public class BookingController {
+public class UserController {
     private final BookingService bookingService;
     private final AuthService authService;
     @PostMapping("bookings")
@@ -36,7 +36,7 @@ public class BookingController {
                 .build();
         return ResponseEntity.status(HttpStatus.CREATED).body(response);
     }
-    @GetMapping
+    @GetMapping("/history")
     public ResponseEntity<ApiResponse<List<BookingResponse>>> getHistory(Principal principal) {
         List<BookingResponse> data = bookingService.getMyBookingHistory(principal.getName());
 
@@ -48,22 +48,10 @@ public class BookingController {
 
         return ResponseEntity.ok(response);
     }
-    @PutMapping("/{id}/status")
-    public ResponseEntity<ApiResponse<BookingResponse>> updateStatus(@PathVariable Long id, @Valid @RequestBody UpdateBookingStatusRequest request) {
-        BookingResponse data = bookingService.updateStatus(id, request);
-        ApiResponse<BookingResponse> response = ApiResponse.<BookingResponse>builder()
-                .success(true)
-                .message("Cập nhật trạng thái đơn đặt sân thành công")
-                .data(data)
-                .build();
-
-        return ResponseEntity.ok(response);
-    }
-    @PutMapping("/change-password")
+    @PatchMapping("/change-password")
     public ResponseEntity<ApiResponse<Void>> changePassword(
             @Valid @RequestBody ChangePasswordRequest request,
             Principal principal) {
-
         authService.changePassword(request, principal.getName());
         ApiResponse<Void> response = ApiResponse.<Void>builder()
                 .success(true)

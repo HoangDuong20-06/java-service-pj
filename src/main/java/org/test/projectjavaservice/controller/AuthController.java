@@ -67,7 +67,6 @@ public class AuthController {
     @PostMapping("/forgot-password")
     public ResponseEntity<ApiResponse<Void>> forgotPassword(@Valid @RequestBody ForgotPasswordRequest request) {
         authService.resetPassword(request);
-
         ApiResponse<Void> response = ApiResponse.<Void>builder()
                 .success(true)
                 .message("Mật khẩu mới tạm thời đã được thiết lập lại thành công.")

@@ -12,3 +12,13 @@ VALUES
     (3, 'Sân C',  true);
 
 SHOW CREATE TABLE bookings;
+
+INSERT INTO badminton_clusters
+(name, address, hotLine, manager_id)
+VALUES
+    (
+        'San Cau Long TDT',
+        'Ha Noi',
+        '0123456788',
+        4
+    );

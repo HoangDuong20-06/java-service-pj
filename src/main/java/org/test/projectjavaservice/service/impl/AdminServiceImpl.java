@@ -19,25 +19,38 @@ import java.util.stream.Collectors;
 public class AdminServiceImpl implements AdminService {
     @Autowired
     private UserRepository userRepository;
+    @Override
+    public Page<UserResponse> getUsers(String keyword, Pageable pageable) {
+
+        Page<User> users;
+
+        if (keyword == null || keyword.isBlank()) {
+            users = userRepository.findByIsEnabledTrue(pageable);
+        } else {
+            users = userRepository.findByFullNameContainingIgnoreCaseAndIsEnabledTrue(keyword, pageable);
+        }
+        return users.map(user -> UserResponse.builder()
+                .id(user.getId())
+                .username(user.getUsername())
+                .email(user.getEmail())
+                .role(user.getRole())
+                .isEnabled(user.getIsEnabled())
+                .fullName(user.getFullName())
+                .phoneNumber(user.getPhoneNumber())
+                .build());
+    }
 
     @Override
-    public List<UserResponse> searchAndFilterUsers(String nameKeyword) {
-        return userRepository
-                .findByFullNameContainingIgnoreCase(nameKeyword, Pageable.unpaged())
-                .getContent()
-                .stream()
-                .map(user -> {
-                    UserResponse dto = new UserResponse();
-                    dto.setId(user.getId());
-                    dto.setUsername(user.getUsername());
-                    dto.setEmail(user.getEmail());
-                    dto.setRole(user.getRole());
-                    dto.setIsEnabled(user.getIsEnabled());
-                    dto.setFullName(user.getFullName());
-                    dto.setPhoneNumber(user.getPhoneNumber());
-                    return dto;
-                })
-                .toList();
+    public void softDeleteUser(Long id) {
+
+        User user = userRepository.findById(id)
+                .orElseThrow(() -> new RuntimeException("User not found"));
+
+        if (Boolean.FALSE.equals(user.getIsEnabled())) {
+            throw new RuntimeException("User already disabled");
+        }
+        user.setIsEnabled(false);
+        userRepository.save(user);
     }
 
     @Override

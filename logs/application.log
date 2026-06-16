@@ -580,3 +580,5 @@ java.lang.RuntimeException: Invalid cloud_name Duong
 2026-06-15T12:48:59.170+07:00  INFO 22524 --- [project-java-service] [restartedMain] o.t.p.ProjectJavaServiceApplication      : Started ProjectJavaServiceApplication in 1.527 seconds (process running for 267.387)
 2026-06-15T12:50:55.693+07:00  INFO 22524 --- [project-java-service] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2026-06-15T12:51:00.598+07:00  INFO 22524 --- [project-java-service] [http-nio-8080-exec-2] o.t.p.aspect.LoggingAspect               : [SUCCESS] Method=uploadCourtImages Time=4858ms
+2026-06-15T13:27:06.492+07:00  INFO 22524 --- [project-java-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown initiated...
+2026-06-15T13:27:06.499+07:00  INFO 22524 --- [project-java-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown completed.

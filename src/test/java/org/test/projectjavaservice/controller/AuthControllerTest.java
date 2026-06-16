@@ -67,10 +67,8 @@ class AuthControllerTest {
 
     @Test
     void refreshTokenTest() throws Exception {
-
         TokenRefreshRequest request = new TokenRefreshRequest();
         request.setRefreshToken("abcxyz");
-
         Mockito.when(tokenRefreshService.refreshAccessToken(any()))
                 .thenReturn(JwtResponse.builder().build());
 
@@ -82,7 +80,6 @@ class AuthControllerTest {
 
     @Test
     void logoutTest() throws Exception {
-
         mockMvc.perform(post("/api/v1/auth/logout")
                         .header("Authorization", "Bearer token"))
                 .andExpect(status().isOk());
@@ -90,10 +87,8 @@ class AuthControllerTest {
 
     @Test
     void forgotPasswordTest() throws Exception {
-
         ForgotPasswordRequest request = new ForgotPasswordRequest();
         request.setEmail("test@gmail.com");
-
         mockMvc.perform(post("/api/v1/auth/forgot-password")
                         .contentType(MediaType.APPLICATION_JSON)
                         .content(mapper.writeValueAsString(request)))
